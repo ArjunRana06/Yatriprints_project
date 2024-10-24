@@ -1,0 +1,293 @@
+
+
+body{
+    background-color: #f4d7e8;
+}
+.navbar-custom {
+    background-color: #0d3b44;
+    padding: 1rem 0;
+    color: #faf8f8;
+    width: 100%;
+}
+
+.logo {
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    filter: brightness(0.8);
+    transform: scale(0.95);
+}
+
+.nav-link {
+    color: #e8c7a7;
+    margin-left: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #6d6c6c; 
+}
+
+.nav-icon {
+    color: #e8c7a7;
+    font-size: 1.4rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-icon:hover{
+    font-size: 1.35rem;
+    color: #6d6c6c; 
+}
+
+.account-hover:hover .dropdown-menu,
+.country-hover:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+#searchOffcanvas .offcanvas-body {
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: -100px;
+}
+
+#searchOffcanvas .form-control {
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.update-btn {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.update-btn:hover {
+    background-color: #c9302c;
+}
+
+#cartOffcanvas {
+    background-color: #0d3b44;
+    color: #f8f9fa;
+    padding: 20px;
+}
+
+#cartOffcanvas .btn-close {
+    background-color: #d9534f;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-left {
+        display: none;
+    }
+
+    .navbar-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .navbar-right .nav-icon:first-child {
+        order: -1;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* body */
+.body_bg {
+    height: 90vh;
+    width: 100%;
+    background-image: url(./Myimages/image2.webp);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.main_body{
+    padding: 10%;
+}
+
+.Head_text{
+    font-family:cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
+}
+.subhead_text{
+    font-weight: bold;
+    font-size: 19px;
+}
+
+
+
+/* next Part */
+
+
+
+/* Custom styles for the project */
+
+.cardmain{
+    padding: 2% 6% 0% 6%;
+}
+
+.custom-card {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgb(10, 110, 172);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 9.9s ease, background-size 9.9s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card:hover {   
+    background-size: 123%;
+}
+
+.card-content {
+    height: 400px;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: background 0.9s ease;
+}
+
+.custom-card:hover .card-content {
+    background: rgba(0, 0, 0, 0.7); /* Darken the content background on hover */
+}
+
+.card-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.shop-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f76c6c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: border-radius 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.shop-btn:hover {
+    border-radius: 40px; /* Rounded button effect on hover */
+    background-color: #e74c3c;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .custom-card {
+        height: 300px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+
+    .shop-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Carousel control styles */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #f76c6c; /* Custom color for carousel controls */
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    background-color: #e74c3c; /* Darken the color on hover */
+}
+
+
+
+/* review */
+.Review_css{
+    padding: 5%;
+}
+
+/* rating */
+.star-rating {
+    direction: rtl;
+    font-size: 2rem;
+    display: inline-flex;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Highlight stars on hover */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f76c6c;
+}
+
+/* Show selected rating */
+.star-rating input:checked ~ label {
+    color: #f76c6c;
+}

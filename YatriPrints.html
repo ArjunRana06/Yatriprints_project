@@ -1,11 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yatri Prints</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="YatriPrints.css">
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav class="navbar-custom d-flex align-items-center justify-content-between">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Left part of navbar -->
+            <div class="navbar-left d-flex align-items-center">
+                <img src="./Myimages/Asset_7_1.png" alt="Logo" class="logo">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Custom Canvas Prints</a>
+                <a href="#" class="nav-link">Collections</a>
+                <a href="#" class="nav-link">Photo Frames</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+            <!-- Right part of navbar -->
+            <div class="navbar-right d-flex align-items-center">
+                <!-- Account dropdown -->
+                <div class="nav-icon position-relative account-hover">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <ul class="dropdown-menu p-2">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-to-bracket"></i> Log In</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-plus"></i> Create Account</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Search icon -->
+                <div class="nav-icon">
+                    <i class="fa-solid fa-magnifying-glass" data-bs-toggle="offcanvas"
+                        data-bs-target="#searchOffcanvas"></i>
+                </div>
+
+                <!-- Country selector -->
+                <div class="nav-icon position-relative country-hover">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="dropdown-menu p-3">
+                        <label for="countrySelect" class="form-label">Country</label>
+                        <select class="form-select" id="countrySelect">
+                            <option>Australia (AUD $)</option>
+                            <option>USA (USD $)</option>
+                            <option>USA (USD $)</option>
+                            <option>Canada (CAD $)</option>
+                            <option>UK (GBP £)</option>
+                            <option>Germany (EUR €)</option>
+                            <option>France (EUR €)</option>
+                            <option>Italy (EUR €)</option>
+                            <option>Spain (EUR €)</option>
+                            <option>Netherlands (EUR €)</option>
+                            <option>Japan (JPY ¥)</option>
+                            <option>China (CNY ¥)</option>
+                            <option>India (INR ₹)</option>
+                            <option>Brazil (BRL R$)</option>
+                            <option>South Africa (ZAR R)</option>
+                            <option>New Zealand (NZD $)</option>
+                            <option>USA (USD $)</option>
+                            <option>Canada (CAD $)</option>
+                            <option>UK (GBP £)</option>
+                            <option>Germany (EUR €)</option>
+                            <option>France (EUR €)</option>
+                            <option>Italy (EUR €)</option>
+                            <option>Spain (EUR €)</option>
+                            <option>Netherlands (EUR €)</option>
+                            <option>Japan (JPY ¥)</option>
+                            <option>China (CNY ¥)</option>
+                            <option>India (INR ₹)</option>
+                            <option>Brazil (BRL R$)</option>
+                            <option>South Africa (ZAR R)</option>
+                            <option>New Zealand (NZD $)</option>
+                            <!-- Add other countries as needed -->
+                        </select>
+                        <button class="btn update-btn mt-3 w-100">Update Preferences</button>
+                    </div>
+                </div>
+
+                <!-- Cart icon -->
+                <div class="nav-icon">
+                    <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Offcanvas -->
+    <div class="offcanvas offcanvas-top" id="searchOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Search</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="Search our store">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" id="cartOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Your cart is empty.</p>
+        </div>
+        <div class="offcanvas-footer">
+            <button class="btn btn-primary w-100">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="body_bg">
+        <div class="main_body">
+            <span class="Head_text">
+                THE NEW ADVENTURE IN
+                <br>
+                PRINTING
+            </span><br>
+            <span class="subhead_text mt-5">
+                Yatri prints is about fulfilling your canvas dreams. We create customized canvas <br> prints that can be
+                hanged to walls of your room. Order your customized canvas <br> today.
+            </span><br>
+            <button type="button" class="btn btn-danger mt-4 p-3">Order Your Costumer Canvas Today</button>
+        </div>
+    </div>
+
+
+    <!-- next Part -->
+
+    <div class="mt-5 text-center fs-3">
+        Our Collections
+    </div>
+
+    <!-- Container for the cards -->
+    <div class="container cardmain ">
+        <div class="row d-none d-md-flex card_css"> <!-- For desktop view -->
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="custom-card" style="background-image: url('Myimages/1.png');">
+                    <div class="card-content">
+                        <h3>Custom Canvas</h3>
+                        <p>1 Product</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="custom-card" style="background-image: url('./Myimages/2.jpg');">
+                    <div class="card-content">
+                        <h3>Hindu God Canvas</h3>
+                        <p>32 Products</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="custom-card" style="background-image: url('Myimages/3.jpg');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 4 -->
+             <div class="col-md-4 mt-4">
+                <div class="custom-card" style="background-image: url('Myimages/4.jpg');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 5 -->
+             <div class="col-md-4 mt-4">
+                <div class="custom-card" style="background-image: url('Myimages/5.jpg');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 6 -->
+             <div class="col-md-4 mt-4">
+                <div class="custom-card" style="background-image: url('Myimages/7.jpg');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 7 -->
+             <div class="col-md-4 mt-4">
+                <div class="custom-card" style="background-image: url('Myimages/6.png');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 8 -->
+             <div class="col-md-4 mt-4">
+                <div class="custom-card" style="background-image: url('Myimages/8.png');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 9 -->
+             <div class="col-md-4 mt-4">
+                <div class="custom-card" style="background-image: url('Myimages/1.png');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel for mobile view -->
+        <div id="cardCarousel" class="carousel slide d-md-none" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Card 1 -->
+                <div class="carousel-item active">
+                    <div class="custom-card" style="background-image: url('Myimages/1.png');">
+                        <div class="card-content">
+                            <h3>Custom Canvas</h3>
+                            <p>1 Product</p>
+                            <a href="#" class="shop-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="carousel-item">
+                    <div class="custom-card" style="background-image: url('Myimages/2.jpg');">
+                        <div class="card-content">
+                            <h3>Hindu God Canvas</h3>
+                            <p>32 Products</p>
+                            <a href="#" class="shop-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="carousel-item">
+                    <div class="custom-card" style="background-image: url('Myimages/3.jpg');">
+                        <div class="card-content">
+                            <h3>7 Horses Canvas</h3>
+                            <p>4 Products</p>
+                            <a href="#" class="shop-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="custom-card" style="background-image: url('Myimages/4.jpg');">
+                        <div class="card-content">
+                            <h3>7 Horses Canvas</h3>
+                            <p>4 Products</p>
+                            <a href="#" class="shop-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="custom-card" style="background-image: url('Myimages/5.jpg');">
+                        <div class="card-content">
+                            <h3>7 Horses Canvas</h3>
+                            <p>4 Products</p>
+                            <a href="#" class="shop-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="custom-card" style="background-image: url('Myimages/6.png');">
+                        <div class="card-content">
+                            <h3>7 Horses Canvas</h3>
+                            <p>4 Products</p>
+                            <a href="#" class="shop-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="custom-card" style="background-image: url('Myimages/7.jpg');">
+                        <div class="card-content">
+                            <h3>7 Horses Canvas</h3>
+                            <p>4 Products</p>
+                            <a href="#" class="shop-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="custom-card" style="background-image: url('Myimages/8.png');">
+                        <div class="card-content">
+                            <h3>7 Horses Canvas</h3>
+                            <p>4 Products</p>
+                            <a href="#" class="shop-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Next Part -->
+    <div class="container text-center fs-5">
+        <div class="Review_css fs-3">
+            Customer Reviews
+        </div>
+        <div>
+            Let customers speak for us
+        </div>
+        <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 star">&#9733;</label>
+        </div>
+        
+        <div>
+            from 38 reviews
+        </div>
+        <div class="text-success">
+            Verified by
+            <img src="./Myimages/logo-judgeme.svg" alt="">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
