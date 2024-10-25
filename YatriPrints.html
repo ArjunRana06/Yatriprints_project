@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     <link rel="stylesheet" href="YatriPrints.css">
 </head>
 
@@ -16,20 +17,77 @@
     <!-- Navbar -->
     <nav class="navbar-custom d-flex align-items-center justify-content-between">
         <div class="container d-flex align-items-center justify-content-between">
+
+
             <!-- Left part of navbar -->
             <div class="navbar-left d-flex align-items-center">
-                <img src="./Myimages/Asset_7_1.png" alt="Logo" class="logo">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Custom Canvas Prints</a>
-                <a href="#" class="nav-link">Collections</a>
-                <a href="#" class="nav-link">Photo Frames</a>
-                <a href="#" class="nav-link">Contact</a>
+                <!-- Menu Icon -->
+
+                <!-- Checkbox to control the menu visibility -->
+                <input type="checkbox" id="uniqueMenuToggle" class="unique-menu-toggle-checkbox">
+
+                <!-- Icon to open the menu -->
+                <label for="uniqueMenuToggle" class="unique-menu-icon-label">
+                    <i title="Menu" class="fa fa-bars unique-menu-icon menu-icon d-lg-none"></i>
+                </label>
+
+                <!-- Offcanvas menu -->
+                <div id="uniqueOffcanvasMenu" class="unique-offcanvas">
+                    <div class="unique-offcanvas-header">
+                        <h2>Menu</h2>
+                        <label for="uniqueMenuToggle" class="unique-close-icon-label">
+                            <i title="Close" class="fas fa-times unique-close-icon"></i>
+                        </label>
+                    </div>
+                    <hr>
+                    <ul class="unique-menu-list">
+                        <li><a title="Home Page" href="#">Home</a></li>
+                        <li><a title="Custom Canvas Prints" href="#">Custom Canvas Prints</a></li>
+                        <li><a title="Click to see collections" href="#">Collections</a></li>
+                        <li><a title="Click to see photos" href="#">Photo Frames</a></li>
+                        <li><a title="Click to contact us" href="#">Contact</a></li>
+                    </ul>
+                    <hr>
+                    <div class="unique-auth-buttons">
+                        <button title="Click to login" class="unique-login-btn">Log In</button>
+                        <button title="Click to create Account" class="unique-signup-btn">Create Account</button>
+                    </div>
+                    <hr>
+                    <div class="unique-contact-info">
+                        <a title="Click to gmail" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><p><i class="fas fa-envelope"></i> yatirprints@gmail.com</p></a>
+                        <a title="click to call" href="" target="_blank"><p><i class="fas fa-phone"></i> 0468659344</p></a>
+                    </div>
+                    <hr>
+                    <ul class="unique-footer-links">
+                        <li><a title="Click to search" href="#">Search</a></li>
+                        <li><a title="Click to see privacy and policy" href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Do not sell or share my personal information</a></li>
+                    </ul>
+                    <div class="unique-social-icons">
+
+                        <a title="Click to go Facebook page" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a title="click to go instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a title="Click to go tiktok" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+
+                    </div>
+                </div>
+
+
+                <img title="logo" src="./Myimages/Asset_7_1.png" alt="Logo" class="logo">
+                <a href="./YatriPrints.html" class="nav-link">Home</a>
+                <a title="Click for custom canvas prints" href="#" class="nav-link">Custom Canvas Prints</a>
+                <a title="Click for collections" href="#" class="nav-link">Collections</a>
+                <a title="Click for photos" href="#" class="nav-link">Photo Frames</a>
+                <a title="Click for contact" href="#" class="nav-link">Contact</a>
             </div>
             <!-- Right part of navbar -->
             <div class="navbar-right d-flex align-items-center">
                 <!-- Account dropdown -->
                 <div class="nav-icon position-relative account-hover">
-                    <i class="fa-solid fa-circle-user"></i>
+                    <i title="Click for login" class="fa-solid fa-circle-user"></i>
                     <ul class="dropdown-menu p-2">
                         <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-to-bracket"></i> Log In</a>
                         </li>
@@ -40,13 +98,13 @@
 
                 <!-- Search icon -->
                 <div class="nav-icon">
-                    <i class="fa-solid fa-magnifying-glass" data-bs-toggle="offcanvas"
+                    <i title="Click to Search" class="fa-solid fa-magnifying-glass" data-bs-toggle="offcanvas"
                         data-bs-target="#searchOffcanvas"></i>
                 </div>
 
                 <!-- Country selector -->
                 <div class="nav-icon position-relative country-hover">
-                    <i class="fa-solid fa-globe"></i>
+                    <i title="Language/Currency" class="fa-solid fa-globe"></i>
                     <div class="dropdown-menu p-3">
                         <label for="countrySelect" class="form-label">Country</label>
                         <select class="form-select" id="countrySelect">
@@ -88,7 +146,7 @@
 
                 <!-- Cart icon -->
                 <div class="nav-icon">
-                    <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"></i>
+                    <i title="Cart" class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"></i>
                 </div>
             </div>
         </div>
@@ -103,7 +161,7 @@
         <div class="offcanvas-body">
             <form class="d-flex">
                 <input type="text" class="form-control me-2" placeholder="Search our store">
-                <button type="submit" class="btn btn-primary">Search</button>
+                <button title="Search" type="submit" class="btn btn-primary">Search</button>
             </form>
         </div>
     </div>
@@ -118,7 +176,7 @@
             <p>Your cart is empty.</p>
         </div>
         <div class="offcanvas-footer">
-            <button class="btn btn-primary w-100">Checkout</button>
+            <button title="Click to chrckout" class="btn btn-primary w-100">Checkout</button>
         </div>
     </div>
 
@@ -134,7 +192,7 @@
                 Yatri prints is about fulfilling your canvas dreams. We create customized canvas <br> prints that can be
                 hanged to walls of your room. Order your customized canvas <br> today.
             </span><br>
-            <button type="button" class="btn btn-danger mt-4 p-3">Order Your Costumer Canvas Today</button>
+            <button title="Click to order" type="button" class="btn btn-danger mt-4 p-3">Order Your Costumer Canvas Today</button>
         </div>
     </div>
 
@@ -154,7 +212,7 @@
                     <div class="card-content">
                         <h3>Custom Canvas</h3>
                         <p>1 Product</p>
-                        <a href="#" class="shop-btn">Shop now</a>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                     </div>
                 </div>
             </div>
@@ -164,7 +222,7 @@
                     <div class="card-content">
                         <h3>Hindu God Canvas</h3>
                         <p>32 Products</p>
-                        <a href="#" class="shop-btn">Shop now</a>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                     </div>
                 </div>
             </div>
@@ -174,67 +232,67 @@
                     <div class="card-content">
                         <h3>7 Horses Canvas</h3>
                         <p>4 Products</p>
-                        <a href="#" class="shop-btn">Shop now</a>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                     </div>
                 </div>
             </div>
-             <!-- Card 4 -->
-             <div class="col-md-4 mt-4">
+            <!-- Card 4 -->
+            <div class="col-md-4 mt-4">
                 <div class="custom-card" style="background-image: url('Myimages/4.jpg');">
                     <div class="card-content">
                         <h3>7 Horses Canvas</h3>
                         <p>4 Products</p>
-                        <a href="#" class="shop-btn">Shop now</a>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                     </div>
                 </div>
             </div>
-             <!-- Card 5 -->
-             <div class="col-md-4 mt-4">
+            <!-- Card 5 -->
+            <div class="col-md-4 mt-4">
                 <div class="custom-card" style="background-image: url('Myimages/5.jpg');">
                     <div class="card-content">
                         <h3>7 Horses Canvas</h3>
                         <p>4 Products</p>
-                        <a href="#" class="shop-btn">Shop now</a>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                     </div>
                 </div>
             </div>
-             <!-- Card 6 -->
-             <div class="col-md-4 mt-4">
+            <!-- Card 6 -->
+            <div class="col-md-4 mt-4">
                 <div class="custom-card" style="background-image: url('Myimages/7.jpg');">
                     <div class="card-content">
                         <h3>7 Horses Canvas</h3>
                         <p>4 Products</p>
-                        <a href="#" class="shop-btn">Shop now</a>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                     </div>
                 </div>
             </div>
-             <!-- Card 7 -->
-             <div class="col-md-4 mt-4">
+            <!-- Card 7 -->
+            <div class="col-md-4 mt-4">
                 <div class="custom-card" style="background-image: url('Myimages/6.png');">
                     <div class="card-content">
                         <h3>7 Horses Canvas</h3>
                         <p>4 Products</p>
-                        <a href="#" class="shop-btn">Shop now</a>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                     </div>
                 </div>
             </div>
-             <!-- Card 8 -->
-             <div class="col-md-4 mt-4">
+            <!-- Card 8 -->
+            <div class="col-md-4 mt-4">
                 <div class="custom-card" style="background-image: url('Myimages/8.png');">
                     <div class="card-content">
                         <h3>7 Horses Canvas</h3>
                         <p>4 Products</p>
-                        <a href="#" class="shop-btn">Shop now</a>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                     </div>
                 </div>
             </div>
-             <!-- Card 9 -->
-             <div class="col-md-4 mt-4">
+            <!-- Card 9 -->
+            <div class="col-md-4 mt-4">
                 <div class="custom-card" style="background-image: url('Myimages/1.png');">
                     <div class="card-content">
                         <h3>7 Horses Canvas</h3>
                         <p>4 Products</p>
-                        <a href="#" class="shop-btn">Shop now</a>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                     </div>
                 </div>
             </div>
@@ -250,7 +308,7 @@
                         <div class="card-content">
                             <h3>Custom Canvas</h3>
                             <p>1 Product</p>
-                            <a href="#" class="shop-btn">Shop now</a>
+                            <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -260,7 +318,7 @@
                         <div class="card-content">
                             <h3>Hindu God Canvas</h3>
                             <p>32 Products</p>
-                            <a href="#" class="shop-btn">Shop now</a>
+                            <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -270,7 +328,7 @@
                         <div class="card-content">
                             <h3>7 Horses Canvas</h3>
                             <p>4 Products</p>
-                            <a href="#" class="shop-btn">Shop now</a>
+                            <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +337,7 @@
                         <div class="card-content">
                             <h3>7 Horses Canvas</h3>
                             <p>4 Products</p>
-                            <a href="#" class="shop-btn">Shop now</a>
+                            <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -288,7 +346,7 @@
                         <div class="card-content">
                             <h3>7 Horses Canvas</h3>
                             <p>4 Products</p>
-                            <a href="#" class="shop-btn">Shop now</a>
+                            <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -297,7 +355,7 @@
                         <div class="card-content">
                             <h3>7 Horses Canvas</h3>
                             <p>4 Products</p>
-                            <a href="#" class="shop-btn">Shop now</a>
+                            <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -306,7 +364,7 @@
                         <div class="card-content">
                             <h3>7 Horses Canvas</h3>
                             <p>4 Products</p>
-                            <a href="#" class="shop-btn">Shop now</a>
+                            <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -315,7 +373,7 @@
                         <div class="card-content">
                             <h3>7 Horses Canvas</h3>
                             <p>4 Products</p>
-                            <a href="#" class="shop-btn">Shop now</a>
+                            <a title="click to shop" href="#" class="shop-btn">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -352,7 +410,7 @@
             <input type="radio" id="star1" name="rating" value="1" />
             <label for="star1" title="1 star">&#9733;</label>
         </div>
-        
+
         <div>
             from 38 reviews
         </div>
@@ -361,6 +419,70 @@
             <img src="./Myimages/logo-judgeme.svg" alt="">
         </div>
     </div>
+
+    <!-- Next part -->
+    
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Follow-us section -->
+            <div class="meke_in_row">
+                <div class="social-text">
+                    <p>Follow-us on social media!</p>
+                </div>
+                <div class="social-icons mx-4">
+                    <a target="_blank" title="Facebook" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" title="Instagram" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a title="Tiktok" target="_blank" href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Horizontal line -->
+            <hr>
+
+            <!-- More Info Section -->
+            <div class="more-info-text">
+                <p>More Info</p>
+            </div>
+            <div class="container">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Search</a></li><br>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li><br>
+                    <li class="list-inline-item"><a href="#">Refund Policy</a></li><br>
+                    <li class="list-inline-item"><a href="#">Shipping & Returns</a></li><br>
+                    <li class="list-inline-item"><a href="#">Terms Of Service</a></li><br>
+                    <li class="list-inline-item"><a href="#">Do not sell or share my personal information</a></li><br>
+                </ul>
+            </div>
+
+            <!-- Horizontal line -->
+            <hr>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom row align-items-center">
+                <div class="col-md-6 footer-bottom-left">
+                    <p>Copyright © 2024 <span>Yatri Prints</span> | <span>Powered by Shopify</span> | <span>Powered by
+                            Debutify</span></p>
+                </div>
+                <div class="col-md-6 footer-bottom-right">
+                    <img title="AMXE PAY" class="img-fluid rounded" src="Myimages/channels4_profile.jpg" alt="Payment Methods">
+                    <img title="i-PAY" class="img-fluid rounded" src="Myimages/apple pay.png" alt="Payment Methods">
+                    <img title="G-PAY" class="img-fluid rounded" src="Myimages/g-pay.jpg" alt="Payment Methods">
+                    <img title="MASTER-PAY" class="img-fluid rounded" src="Myimages/mastercard.jpg" alt="Payment Methods">
+                    <img title="SHOP-PAY" class="img-fluid rounded" src="Myimages/shop pay.webp" alt="Payment Methods">
+                    <img title="UNION-PAY" class="img-fluid rounded" src="Myimages/union pay.png" alt="Payment Methods">
+                    <img title="VISA-PAY" class="img-fluid rounded" src="Myimages/visa.png" alt="Payment Methods">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
