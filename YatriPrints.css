@@ -92,9 +92,10 @@
     background-color: #d9534f;
 }
 
- /* Responsive Navbar for Screens 900px and Below */
+
  @media (max-width: 990px) {
-    /* Hide text-based navigation links */
+    
+
     .navbar-left .nav-link {
         display: none;
     }
@@ -113,9 +114,6 @@
     .navbar-right {
         justify-content: flex-end;
     }
-
-    /* Show hamburger menu and search icon on the left */
-    
 
     /* Show the logo in the middle */
     .logo {
@@ -142,6 +140,13 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .Head_text {
+      font-size: 14px;
+    }
+  }
+  
+
 
 /* body */
 .body_bg {
@@ -149,7 +154,7 @@
     width: 100%;
     background-image: url(./Myimages/image2.webp);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
 }
 
 .main_body{
@@ -213,7 +218,7 @@
 }
 
 .custom-card:hover .card-content {
-    background: rgba(0, 0, 0, 0.7); /* Darken the content background on hover */
+    background: rgba(0, 0, 0, 0.7); /
 }
 
 .card-content h3 {
@@ -239,7 +244,7 @@
 }
 
 .shop-btn:hover {
-    border-radius: 40px; /* Rounded button effect on hover */
+    border-radius: 40px; 
     background-color: #e74c3c;
 }
 
@@ -265,12 +270,12 @@
 
 /* Carousel control styles */
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #f76c6c; /* Custom color for carousel controls */
+    background-color: #f76c6c; 
     border-radius: 50%;
 }
 
 .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
-    background-color: #e74c3c; /* Darken the color on hover */
+    background-color: #e74c3c; 
 }
 
 
@@ -324,7 +329,7 @@
 .meke_in_row{
     text-align: center;
     display: flex;
-    margin-left: 30%;
+    
 }
 
 .footer .social-icons {
@@ -430,7 +435,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 /* Hide the checkbox */
@@ -461,9 +466,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: scroll; /* Enable scrolling */
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    padding-bottom: 80px; /* Add padding to avoid overlap with social icons */
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+    padding-bottom: 80px; 
 }
 
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
@@ -471,7 +476,7 @@ body {
     display: none;
 }
 
-/* Show the offcanvas menu when the checkbox is checked */
+
 .unique-menu-toggle-checkbox:checked ~ .unique-offcanvas {
     left: 0;
 }
@@ -608,4 +613,53 @@ hr {
 }
 
 /* Caresol review part */
- 
+ .unique_reviews_section {
+    padding: 20px;
+  }
+  
+  .reviews-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  
+  .review-card {
+    min-width: 250px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+  
+  .stars i {
+    color: #f86363;
+    font-size: 1.2rem;
+  }
+  
+  .review-author {
+    color: #6c757d;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .review-image {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    object-fit: cover;
+  }
+  
+  .reviews-wrapper::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .reviews-wrapper::-webkit-scrollbar-thumb {
+    background-color: #4caf50;
+    border-radius: 10px;
+  }
+  
