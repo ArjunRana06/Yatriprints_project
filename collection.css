@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+._ganesh, ._horse1, ._horse2, ._nepal, ._age, ._god,._deer, ._nature, ._frames{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._ganesh{
+    background-image: url("img/AllMockups_4.webp");
+}
+._horse1{
+    background-image: url("img/AllMockups_3_a7362054-dc88-4dce-a872-f33de9f9dce5.webp");
+}
+._horse2{
+    background-image: url("img/13.webp");
+}
+._nepal{
+    background-image: url("img/3.webp");
+}
+._age{
+    background-image: url(img/Image_2-6-2024_at_10.48_am.jpg);
+}
+._god{
+    background-image: url(img/5.webp);
+}
+._deer{
+    background-image: url("img/All_Mockups_1.webp");
+}
+._nature{
+    background-image: url(img/large_vertical_mockup.webp);
+}
+._frames{
+    background-image: url("img/AllMockups_3.webp");
+}
+.card p{
+    font-size: 1.5rem;
+}
+
+.card .text-center{
+    padding: 0 5px;
+    color: #fff;
+    padding: 45% 0;
+    width: 100%;
+    height: 500px;
+    background-color: #653f64;
+    background-color: rgba(126, 78, 140, 0.7);
+}
+
+
+.card:hover{
+    transition-duration: .75s;
+    scale: 1.05;
+}
+
