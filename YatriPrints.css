@@ -59,17 +59,44 @@
     left: auto;
 }
 
-#searchOffcanvas .offcanvas-body {
-    height: 100px;
-    border-radius: 10px;
-    margin-bottom: -100px;
+.offcanvas{
+    background: #006468;
 }
 
-#searchOffcanvas .form-control {
-    color: black;
-    border: 1px solid black;
-    border-radius: 0.5rem;
+.offcanvas-header{
+    padding: 1% 10% 1% 10%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #e1e9ec;
 }
+
+.search-input {
+    width: 80%;
+    margin: 0 auto; 
+    border: none;
+    border-bottom: 1px solid rgb(164, 163, 161);
+    box-shadow: 5px 5px 5px 2px;
+    border-radius: 10px;
+}
+
+.search-input:hover{
+    border: 2px solid #21a6ef;
+}
+.search-input .input-group-text {
+    padding: 18px;
+    background-color: white;
+    border: none;
+    border-right: 2px solid transparent; 
+}
+
+.search-input .form-control {
+    border: none; 
+    box-shadow: none;
+}
+.search-input .input-group {
+    border: 2px solid #ccc;
+}
+
 
 .update-btn {
     background-color: #d9534f;
@@ -325,12 +352,6 @@
 .footer .social-text {
     font-size: 20px;
     margin-bottom: 10px;
-}
-
-.meke_in_row{
-    text-align: center;
-    display: flex;
-    
 }
 
 .footer .social-icons {
@@ -666,4 +687,16 @@ hr {
   
   .link_icon{
     color: #cbfff7;
+  }
+
+
+  .meke_in_row{
+    text-align: center;
+    display: flex;   
+}
+
+  .hrline{
+    background-color: white;
+    width: 1px;
+    margin-right: 50px;
   }

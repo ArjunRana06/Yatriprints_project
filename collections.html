@@ -8,10 +8,193 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="collection.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="container my-5">
+
+    <!-- Header -->
+    <!-- Navbar -->
+    <nav class="navbar-custom d-flex align-items-center justify-content-between">
+        <div class="container d-flex align-items-center justify-content-between">
+
+
+            <!-- Left part of navbar -->
+            <div class="navbar-left d-flex align-items-center">
+                <!-- Menu Icon -->
+
+                <input type="checkbox" id="uniqueMenuToggle" class="unique-menu-toggle-checkbox">
+
+                <!-- Icon to open the menu -->
+                <label for="uniqueMenuToggle" class="unique-menu-icon-label">
+                    <i title="Menu" class="fa fa-bars unique-menu-icon menu-icon d-lg-none"></i>
+                </label>
+
+                <!-- Offcanvas menu -->
+                <div id="uniqueOffcanvasMenu" class="unique-offcanvas">
+                    <div class="unique-offcanvas-header">
+                        <h2>Menu</h2>
+                        <label for="uniqueMenuToggle" class="unique-close-icon-label">
+                            <i title="Close" class="fas fa-times unique-close-icon"></i>
+                        </label>
+                    </div>
+                    <hr>
+                    <ul class="unique-menu-list">
+                        <li><a title="Home Page" href="#">Home</a></li>
+                        <li><a title="Custom Canvas Prints" href="#">Custom Canvas Prints</a></li>
+                        <li><a title="Click to see collections" href="#">Collections</a></li>
+                        <li><a title="Click to see photos" href="#">Photo Frames</a></li>
+                        <li><a title="Click to contact us" href="#">Contact</a></li>
+                    </ul>
+                    <hr>
+                    <div class="unique-auth-buttons">
+                        <button title="Click to login" class="unique-login-btn">Log In</button>
+                        <button title="Click to create Account" class="unique-signup-btn">Create Account</button>
+                    </div>
+                    <hr>
+                    <div class="unique-contact-info">
+                        <a title="Click to gmail" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                            <p><i class="fas fa-envelope"></i> yatirprints@gmail.com</p>
+                        </a>
+                        <a title="click to call" href="" target="_blank">
+                            <p><i class="fas fa-phone"></i> 0468659344</p>
+                        </a>
+                    </div>
+                    <hr>
+                    <ul class="unique-footer-links">
+                        <li><a title="Click to search" href="#">Search</a></li>
+                        <li><a title="Click to see privacy and policy" href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Do not sell or share my personal information</a></li>
+                    </ul>
+                    <div class="unique-social-icons">
+
+                        <a title="Click to go Facebook page" href="https://www.facebook.com/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a title="click to go instagram" href="https://www.instagram.com/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a title="Click to go tiktok" href="https://www.tiktok.com/" target="_blank"><i
+                                class="fab fa-tiktok"></i></a>
+
+                    </div>
+                </div>
+
+
+                <img title="logo" src="./Myimages/Asset_7_1.png" alt="Logo" class="logo">
+                <a href="./YatriPrints.html" class="nav-link">Home</a>
+                <a title="Click for custom canvas prints" href="#" class="nav-link">Custom Canvas Prints</a>
+                <a title="Click for collections" href="collections.html" class="nav-link">Collections</a>
+                <a title="Click for photos" href="Photo frame.html" class="nav-link">Photo Frames</a>
+                <a title="Click for contact" href="contect.html" class="nav-link">Contact</a>
+            </div>
+            <!-- Right part of navbar -->
+            <div class="navbar-right d-flex align-items-center">
+                <!-- Account dropdown -->
+                <div class="nav-icon position-relative account-hover">
+                    <i title="Click for login" class="fa-solid fa-circle-user"></i>
+                    <ul class="dropdown-menu p-2">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-to-bracket"></i> Log In</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-plus"></i> Create Account</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Search icon -->
+                <div class="nav-icon">
+                    <i title="Click to Search" class="fa-solid fa-magnifying-glass" data-bs-toggle="offcanvas"
+                        data-bs-target="#searchOffcanvas"></i>
+                </div>
+
+                <!-- Country selector -->
+                <div class="nav-icon position-relative country-hover">
+                    <i title="Language/Currency" class="fa-solid fa-globe"></i>
+                    <div class="dropdown-menu p-3">
+                        <label for="countrySelect" class="form-label">Country</label>
+                        <select class="form-select" id="countrySelect">
+                            <option>Australia (AUD $)</option>
+                            <option>USA (USD $)</option>
+                            <option>USA (USD $)</option>
+                            <option>Canada (CAD $)</option>
+                            <option>UK (GBP £)</option>
+                            <option>Germany (EUR €)</option>
+                            <option>France (EUR €)</option>
+                            <option>Italy (EUR €)</option>
+                            <option>Spain (EUR €)</option>
+                            <option>Netherlands (EUR €)</option>
+                            <option>Japan (JPY ¥)</option>
+                            <option>China (CNY ¥)</option>
+                            <option>India (INR ₹)</option>
+                            <option>Brazil (BRL R$)</option>
+                            <option>South Africa (ZAR R)</option>
+                            <option>New Zealand (NZD $)</option>
+                            <option>USA (USD $)</option>
+                            <option>Canada (CAD $)</option>
+                            <option>UK (GBP £)</option>
+                            <option>Germany (EUR €)</option>
+                            <option>France (EUR €)</option>
+                            <option>Italy (EUR €)</option>
+                            <option>Spain (EUR €)</option>
+                            <option>Netherlands (EUR €)</option>
+                            <option>Japan (JPY ¥)</option>
+                            <option>China (CNY ¥)</option>
+                            <option>India (INR ₹)</option>
+                            <option>Brazil (BRL R$)</option>
+                            <option>South Africa (ZAR R)</option>
+                            <option>New Zealand (NZD $)</option>
+                        </select>
+                        <button class="btn update-btn mt-3 w-100">Update Preferences</button>
+                    </div>
+                </div>
+
+                <!-- Cart icon -->
+                <div class="nav-icon">
+                    <i title="Cart" class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
+                        data-bs-target="#cartOffcanvas"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Offcanvas -->
+    <div class="offcanvas offcanvas-top" id="searchOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Search</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="input-group search-input">
+                <span class="input-group-text">
+                    <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                </span>
+                <input type="search" class="form-control" placeholder="Type Position or Keyword">
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" id="cartOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Your cart is empty.</p>
+        </div>
+        <div class="offcanvas-footer">
+            <button title="Click to chrckout" class="btn btn-primary w-100">Checkout</button>
+        </div>
+    </div>
+
+
+    <!-- Body -->
+    <div class="container my-3">
         <h1 class="text-center fw-normal display-4">Catalog</h1>
         <div class="row my-5">
             <div class="p-2 col-lg-4 col-md-6 col-sm-12 ">
@@ -113,6 +296,109 @@
             </div>
         </div>
     </div>
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="container">
+            <!-- Follow-us section -->
+            <div class="meke_in_row">
+                <div class="col-lg-6 social-text text-end">
+                    <p>Follow-us on social media!</p>
+                </div>
+                <div class="col-6 social-icons text-start">
+                    <a target="_blank" title="Facebook" href="https://www.facebook.com/"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" title="Instagram" href="https://www.instagram.com/"><i
+                            class="fab fa-instagram"></i></a>
+                    <a title="Tiktok" target="_blank" href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Horizontal line -->
+            <hr>
+
+            <div style="display: flex;">
+
+            <div class="col-4">
+                <!-- More Info Section -->
+            <div class="more-info-text">
+                <p>More Info</p>
+            </div>
+            <div class="container">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Search</a></li><br>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li><br>
+                    <li class="list-inline-item"><a href="#">Refund Policy</a></li><br>
+                    <li class="list-inline-item"><a href="#">Shipping & Returns</a></li><br>
+                    <li class="list-inline-item"><a href="#">Terms Of Service</a></li><br>
+                    <li class="list-inline-item"><a href="#">Do not sell or share my personal information</a></li><br>
+                </ul>
+            </div>
+            </div>
+            
+            <div class="hrline"></div>
+
+            <div class="col-4">
+            <!-- Contact Us -->
+            <div class="more-info-text">
+                <p>Contact Us</p>
+            </div>
+            <div class="container">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Location <span class="link_icon"><i class="fa-solid fa-location-dot"></i></span></a>
+                    </li><br>
+                    <li class="list-inline-item"><a href="#">Contact: <span class="link_icon">9800613223</span> <span><i class="fa-solid fa-phone"></i></span></a></li><br>
+                    <li class="list-inline-item"><a href="#">Email: <span class="link_icon">jayram06@gmail.com</span> <span class="link_icon"><i class="fa-solid fa-envelope"></i></span></a></li><br>
+                    <li class="list-inline-item"><a href="#">Instagram: <span class="link_icon"><i class="fa-brands fa-instagram"></i></span></a></li><br> 
+                </ul>
+            </div>
+            </div>
+
+            <div class="hrline"></div>
+
+            <div class="col-3">
+            <!-- Contact Us -->
+            <div class="more-info-text">
+                <p>Need Help</p>
+            </div>
+            <div class="container">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Location <span class="link_icon"><i class="fa-solid fa-location-dot"></i></span></a>
+                    </li><br>
+                    <li class="list-inline-item"><a href="#">Contact: <span class="link_icon">9800613223</span> <span><i class="fa-solid fa-phone"></i></span></a></li><br>
+                    <li class="list-inline-item"><a href="#">Email: <span class="link_icon">jayram06@gmail.com</span> <span class="link_icon"><i class="fa-solid fa-envelope"></i></span></a></li><br>
+                    <li class="list-inline-item"><a href="#">Instagram: <span class="link_icon"><i class="fa-brands fa-instagram"></i></span></a></li><br> 
+                </ul>
+            </div>
+            </div>
+
+            </div>
+            
+            <!-- Horizontal line -->
+            <hr>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom row align-items-center">
+                <div class="col-md-6 footer-bottom-left">
+                    <p>Copyright © 2024 <span>Yatri Prints</span> | <span>Powered by Shopify</span> | <span>Powered by
+                            Debutify</span></p>
+                </div>
+                <div class="col-md-6 footer-bottom-right">
+                    <img title="AMXE PAY" class="img-fluid rounded" src="Myimages/channels4_profile.jpg"
+                        alt="Payment Methods">
+                    <img title="i-PAY" class="img-fluid rounded" src="Myimages/apple pay.png" alt="Payment Methods">
+                    <img title="G-PAY" class="img-fluid rounded" src="Myimages/g-pay.jpg" alt="Payment Methods">
+                    <img title="MASTER-PAY" class="img-fluid rounded" src="Myimages/mastercard.jpg"
+                        alt="Payment Methods">
+                    <img title="SHOP-PAY" class="img-fluid rounded" src="Myimages/shop pay.webp" alt="Payment Methods">
+                    <img title="UNION-PAY" class="img-fluid rounded" src="Myimages/union pay.png" alt="Payment Methods">
+                    <img title="VISA-PAY" class="img-fluid rounded" src="Myimages/visa.png" alt="Payment Methods">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
