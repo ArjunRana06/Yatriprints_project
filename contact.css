@@ -1,13 +1,18 @@
-.image{
-    height: 300px;
-    width: 290px;
+
+
+
+.form_css input{
+    border: none;
+    border-bottom: 2px solid rgb(83, 82, 82);
+    background-color: #ccc;
+}
+
+.form_css textarea{
+    background-color: #ccc; 
 }
 
 
-
-
-
-
+      
 /* Header Css */
 .navbar-custom {
     background-color: #0d3b44;
@@ -490,5 +495,3 @@ hr {
 .footer .footer-bottom-right img:hover {
     transform: scale(1.1);
 }
-
-
