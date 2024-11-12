@@ -2,3 +2,24 @@
     height: 300px;
     width: 290px;
 }
+.Custom-Canvas-Print{
+    height: 115vh;
+    overflow: scroll;
+}
+.Carousel-photo{
+}
+.fa-facebook:hover{
+color: #3152ab;
+}
+.fa-twitter:hover{
+    color: #078bd7;
+}
+.fa-pinterest:hover{
+    color: rgb(161, 45, 45);
+}
+.fa-whatsapp:hover{
+    color: #2dbc3b;
+}
+.fa-m:hover{
+    color: rgb(126, 54, 54);
+}
