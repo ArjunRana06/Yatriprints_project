@@ -17,8 +17,8 @@
 }
 
 .nav-link {
-    color: #e8c7a7;
-    margin-left: 1rem;
+    color: #ebdfc5;
+    margin-left: 1.7rem;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -28,7 +28,7 @@
 }
 
 .nav-icon {
-    color: #e8c7a7;
+    color: #ebdfc5;
     font-size: 1.4rem;
     margin-left: 1.5rem;
     cursor: pointer;
@@ -152,9 +152,10 @@
 .body_bg {
     height: 90vh;
     width: 100%;
-    background-image: url(./Myimages/image2.webp);
+    background-image: url(Myimages/backimg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgb(225, 255, 248);
 }
 
 .main_body{
@@ -316,7 +317,7 @@
   /* Background color matching the image */
   .footer {
     background-color: #1a4146;
-    color: #eac966;
+    color: #f4e2ab;
     padding: 40px 0;
 }
 
@@ -346,7 +347,7 @@
 
 .footer .social-icons a:hover {
     transform: scale(1.2);
-    color: #f0a500;
+    color: #eee2c9;
 }
 
 /* Horizontal lines */
@@ -663,3 +664,6 @@ hr {
     border-radius: 10px;
   }
   
+  .link_icon{
+    color: #cbfff7;
+  }
