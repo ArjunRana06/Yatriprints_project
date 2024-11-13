@@ -16,6 +16,9 @@
   display: none;
 }
 
+.body_CustomCanvasPrint .right p, div{
+  font-size: 15px;
+}
 
 
 
