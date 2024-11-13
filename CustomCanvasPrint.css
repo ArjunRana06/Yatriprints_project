@@ -1,4 +1,22 @@
 
+.body_CustomCanvasPrint img{
+  border-radius: 10px;
+}
+
+.body_CustomCanvasPrint .left{
+  height: 100vh;
+}
+
+.body_CustomCanvasPrint .right{
+  height: 128vh;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 /* Header Css */
 .navbar-custom {
   background-color: #0d3b44;
