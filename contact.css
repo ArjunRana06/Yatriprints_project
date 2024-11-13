@@ -310,112 +310,17 @@ hr {
 .unique-contact-info p {
     margin: 5px 0;
 }
-
-
-/* Footer Css*/
-.meke_in_row{
-    text-align: center;
-    display: flex;   
-}
-
-  .hrline{
-    background-color: white;
-    width: 1px;
-    margin-right: 50px;
+.link_icon{
+    color: #cbfff7;
   }
 
-  
-/* Footer links */
-.unique-footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-.unique-footer-links li {
-    margin: 10px 0;
-}
-
-.unique-footer-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s;
-    position: relative;
-}
-
-.unique-footer-links a::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    transition: width 0.3s ease;
-}
-
-.unique-footer-links a:hover::before {
-    width: 100%;
-}
-
-
-/* Social icons */
-.unique-social-icons {
-    display: flex;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
-    position: fixed;
-    background-color: #233b47;
-    bottom: 0px;
-    height: 60px;
-    width: 280px;
-    z-index: 1100;
-}
-
-.unique-social-icons a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.unique-social-icons a:hover {
-    transform: scale(1.2);
-    color: #f0a500;
-}
-
- /* Background color matching the image */
- .footer {
+  .footer {
     background-color: #1a4146;
-    color: #f4e2ab;
+    color: #918e88;
     padding: 40px 0;
 }
 
-/* Center text and icons in the first part */
-.footer .social-text {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.footer .social-icons {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.footer .social-icons a {
-    color: #cbc4b7;
-    font-size: 20px;
-    margin: 0 10px;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.footer .social-icons a:hover {
-    transform: scale(1.2);
-    color: #eee2c9;
-}
 
 /* Horizontal lines */
 .footer hr {
@@ -441,21 +346,34 @@ hr {
     color: #bfcac7;
 }
 
-/* Underline effect on hover */
-.footer a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    background: #d9dfd8;
-    transition: width 0.3s ease;
-    bottom: -5px;
-    left: 0;
+.Fotter_textcss{
+    font-size: 50px;
+    color: rgb(190, 214, 214);
+    font-weight: bolder;
+    line-height: 35px;
 }
 
-.footer a:hover::after {
-    width: 100%;
+.icon_footer{
+    color: rgb(199, 199, 198);
+    font-size: 30px;
+    padding: 60px 0px 60px 25px;
+}
+
+.row span{
+    padding: 8px;
+    border-radius: 10px;
+}
+.icon_facebook:hover, .icon_tiktok:hover,  .icon_whatsapp:hover, .icon_email:hover, .icon_link:hover, .icon_insta:hover{
+    background-color: rgb(0, 132, 255);
+    border: 2px solid rgb(0, 95, 150);
+}
+
+.list-inline a{
+    color: #b3e1fa;
+}
+
+.list-inline a:hover{
+    color: rgb(89, 95, 99);
 }
 
 /* Footer bottom part (copyright text left, payment icons right) */
@@ -494,4 +412,9 @@ hr {
 
 .footer .footer-bottom-right img:hover {
     transform: scale(1.1);
+}
+
+.navbar-left{
+    font-size: 20px;
+    font-weight: bolder;
 }
