@@ -48,8 +48,8 @@
           </ul>
           <hr>
           <div class="unique-auth-buttons">
-            <button title="Click to login" class="unique-login-btn">Log In</button>
-            <button title="Click to create Account" class="unique-signup-btn">Create Account</button>
+            <a href="login.html"><button title="Click to login" class="unique-login-btn">Log In</button></a>
+            <a href="createacc.html"><button title="Click to create Account" class="unique-signup-btn">Create Account</button></a>
           </div>
           <hr>
           <div class="unique-contact-info">
@@ -95,9 +95,9 @@
         <div class="nav-icon position-relative account-hover">
           <i title="Click for login" class="fa-solid fa-circle-user"></i>
           <ul class="dropdown-menu p-2">
-            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-to-bracket"></i> Log In</a>
+            <li><a class="dropdown-item" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Log In</a>
             </li>
-            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-plus"></i> Create Account</a>
+            <li><a class="dropdown-item" href="createacc.html"><i class="fa-solid fa-user-plus"></i> Create Account</a>
             </li>
           </ul>
         </div>
@@ -189,7 +189,6 @@
     </div>
   </div>
 
-
   <!-- body -->
   <div class="body_CustomCanvasPrint row">
     <div class="col-6 left">
@@ -265,8 +264,14 @@
       </div>
 
       <div class="mt-5 fs-5">
-        <span>Quantity</span><br>
-
+        <section>
+          <form action="">
+            <p class="qty">
+              <label for="qty">Quantity:</label><br>
+              <input style="width: 20%;" type="number" name="qty" id="qty" min="1" max="10" step="1" value="1">
+            </p>
+          </form>			
+        </section>
       </div>
 
       <div class="mt-5">
@@ -364,117 +369,480 @@
             class="fa-solid fa-envelope"></i></a>
       </div>
     </div>
+  </div>
+
+   <!-- Container for the cards -->
+   <div class="container cardmain mt-5">
+    <div class="row d-none d-md-flex card_css"> <!-- For desktop view -->
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="custom-card" style="background-image: url('Myimages/1.png');">
+                <div class="card-content">
+                    <h3>Custom Canvas</h3>
+                    <p>1 Product</p>
+                    <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="custom-card" style="background-image: url('./Myimages/2.jpg');">
+                <div class="card-content">
+                    <h3>Hindu God Canvas</h3>
+                    <p>32 Products</p>
+                    <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="custom-card" style="background-image: url('Myimages/3.jpg');">
+                <div class="card-content">
+                    <h3>7 Horses Canvas</h3>
+                    <p>4 Products</p>
+                    <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-4 mt-4">
+            <div class="custom-card" style="background-image: url('Myimages/4.jpg');">
+                <div class="card-content">
+                    <h3>7 Horses Canvas</h3>
+                    <p>4 Products</p>
+                    <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-4 mt-4">
+            <div class="custom-card" style="background-image: url('Myimages/5.jpg');">
+                <div class="card-content">
+                    <h3>7 Horses Canvas</h3>
+                    <p>4 Products</p>
+                    <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-4 mt-4">
+            <div class="custom-card" style="background-image: url('Myimages/7.jpg');">
+                <div class="card-content">
+                    <h3>7 Horses Canvas</h3>
+                    <p>4 Products</p>
+                    <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="col-md-4 mt-4">
+            <div class="custom-card" style="background-image: url('Myimages/6.png');">
+                <div class="card-content">
+                    <h3>7 Horses Canvas</h3>
+                    <p>4 Products</p>
+                    <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="col-md-4 mt-4">
+            <div class="custom-card" style="background-image: url('Myimages/8.png');">
+                <div class="card-content">
+                    <h3>7 Horses Canvas</h3>
+                    <p>4 Products</p>
+                    <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="col-md-4 mt-4">
+            <div class="custom-card" style="background-image: url('Myimages/1.png');">
+                <div class="card-content">
+                    <h3>7 Horses Canvas</h3>
+                    <p>4 Products</p>
+                    <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Carousel for mobile view -->
+    <div id="cardCarousel" class="carousel slide d-md-none" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Card 1 -->
+            <div class="carousel-item active">
+                <div class="custom-card" style="background-image: url('Myimages/1.png');">
+                    <div class="card-content">
+                        <h3>Custom Canvas</h3>
+                        <p>1 Product</p>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="carousel-item">
+                <div class="custom-card" style="background-image: url('Myimages/2.jpg');">
+                    <div class="card-content">
+                        <h3>Hindu God Canvas</h3>
+                        <p>32 Products</p>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="carousel-item">
+                <div class="custom-card" style="background-image: url('Myimages/3.jpg');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="custom-card" style="background-image: url('Myimages/4.jpg');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="custom-card" style="background-image: url('Myimages/5.jpg');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="custom-card" style="background-image: url('Myimages/6.png');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="custom-card" style="background-image: url('Myimages/7.jpg');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="custom-card" style="background-image: url('Myimages/8.png');">
+                    <div class="card-content">
+                        <h3>7 Horses Canvas</h3>
+                        <p>4 Products</p>
+                        <a title="click to shop" href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
 
 
+
+
+  <!-- Review -->
+     <!-- Next Part -->
+     <div class="container text-center fs-5">
+      <div class="Review_css">
+          <h2 class="text-center">Customer Reviews</h2>
+      </div>
+      <div>
+          Let customers speak for us
+      </div>
+      <div class="star-rating">
+          <input type="radio" id="star5" name="rating" value="5" />
+          <label for="star5" title="5 stars">&#9733;</label>
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label for="star4" title="4 stars">&#9733;</label>
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label for="star3" title="3 stars">&#9733;</label>
+          <input type="radio" id="star2" name="rating" value="2" />
+          <label for="star2" title="2 stars">&#9733;</label>
+          <input type="radio" id="star1" name="rating" value="1" />
+          <label for="star1" title="1 star">&#9733;</label>
+      </div>
+
+      <div>
+          from 38 reviews
+      </div>
+      <div class="text-success">
+          Verified by
+          <img src="./Myimages/logo-judgeme.svg" alt="">
+      </div>
+  </div>
+
+  <!-- Next part Review-->
+
+  <div class="container unique_reviews_section">
+      <div class="reviews-wrapper">
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Well packaged and fully satisfied with the product. Thank you.</p>
+              <h5 class="review-author">Shilpa Shrestha</h5>
+              <img src="Myimages/1.png" alt="Review Image" class="review-image">
+          </div>
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <p><strong>It's very nice pictures i really thank you so much 😊</strong><br>Thank you so much yatri
+                  prints. My husband was happy seeing...</p>
+              <h5 class="review-author">Radha BK</h5>
+              <img src="Myimages/2.jpg" alt="Review Image" class="review-image">
+          </div>
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <p>Best</p>
+              <h5 class="review-author">Simran Dahal</h5>
+              <img src="Myimages/3.jpg" alt="Review Image" class="review-image">
+          </div>
+
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Well packaged and fully satisfied with the product. Thank you.</p>
+              <h5 class="review-author">Shilpa Shrestha</h5>
+              <img src="Myimages/4.jpg" alt="Review Image" class="review-image">
+          </div>
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <p><strong>It's very nice pictures i really thank you so much 😊</strong><br>Thank you so much yatri
+                  prints. My husband was happy seeing...</p>
+              <h5 class="review-author">Radha BK</h5>
+              <img src="Myimages/5.jpg" alt="Review Image" class="review-image">
+          </div>
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <p>Best</p>
+              <h5 class="review-author">Simran Dahal</h5>
+              <img src="Myimages/6.png" alt="Review Image" class="review-image">
+          </div>
+
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Well packaged and fully satisfied with the product. Thank you.</p>
+              <h5 class="review-author">Shilpa Shrestha</h5>
+              <img src="Myimages/7.jpg" alt="Review Image" class="review-image">
+          </div>
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <p><strong>It's very nice pictures i really thank you so much 😊</strong><br>Thank you so much yatri
+                  prints. My husband was happy seeing...</p>
+              <h5 class="review-author">Radha BK</h5>
+              <img src="Myimages/7.jpg" alt="Review Image" class="review-image">
+          </div>
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <p>Best</p>
+              <h5 class="review-author">Simran Dahal</h5>
+              <img src="Myimages/8.png" alt="Review Image" class="review-image">
+          </div>
+
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Well packaged and fully satisfied with the product. Thank you.</p>
+              <h5 class="review-author">Shilpa Shrestha</h5>
+              <img src="Myimages/1.png" alt="Review Image" class="review-image">
+          </div>
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <p><strong>It's very nice pictures i really thank you so much 😊</strong><br>Thank you so much yatri
+                  prints. My husband was happy seeing...</p>
+              <h5 class="review-author">Radha BK</h5>
+              <img src="Myimages/3.jpg" alt="Review Image" class="review-image">
+          </div>
+
+          <div class="review-card">
+              <div class="stars mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <p>Best</p>
+              <h5 class="review-author">Simran Dahal</h5>
+              <img src="Myimages/6.png" alt="Review Image" class="review-image">
+          </div>
+
+
+      </div>
   </div>
 
 
+ <!-- Footer Section -->
+ <footer class="footer">
+  <div class="container">
 
+      <div class="fs-1 fs-bold text-center text-light">Yati Prints</div>
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="container">
-      <!-- Follow-us section -->
-      <div class="meke_in_row">
-        <div class="col-lg-6 social-text text-end">
-          <p>Follow-us on social media!</p>
-        </div>
-        <div class="col-6 social-icons text-start">
-          <a target="_blank" title="Facebook" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-          <a target="_blank" title="Instagram" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-          <a title="Tiktok" target="_blank" href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
-        </div>
-      </div>
-
-      <!-- Horizontal line -->
       <hr>
 
-      <div style="display: flex;">
+      <div class="row">
+          <div class="col-6">
+              <span class="Fotter_textcss">Follow Us on</span>
 
-        <div class="col-4">
-          <!-- More Info Section -->
-          <div class="more-info-text">
-            <p>More Info</p>
-          </div>
-          <div class="container">
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Search</a></li><br>
-              <li class="list-inline-item"><a href="#">Privacy Policy</a></li><br>
-              <li class="list-inline-item"><a href="#">Refund Policy</a></li><br>
-              <li class="list-inline-item"><a href="#">Shipping & Returns</a></li><br>
-              <li class="list-inline-item"><a href="#">Terms Of Service</a></li><br>
-              <li class="list-inline-item"><a href="#">Do not sell or share my personal information</a></li><br>
-            </ul>
-          </div>
-        </div>
+              <div class="icon_footer">
+                  <span class="icon_facebook"><i class="fa-brands fa-facebook"></i></span>
 
-        <div class="hrline"></div>
+                  <span class="icon_tiktok"><i class="fa-brands fa-tiktok"></i></span>
 
-        <div class="col-4">
-          <!-- Contact Us -->
-          <div class="more-info-text">
-            <p>Contact Us</p>
-          </div>
-          <div class="container">
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Location <span class="link_icon"><i
-                      class="fa-solid fa-location-dot"></i></span></a>
-              </li><br>
-              <li class="list-inline-item"><a href="#">Contact: <span class="link_icon">9800613223</span> <span><i
-                      class="fa-solid fa-phone"></i></span></a></li><br>
-              <li class="list-inline-item"><a href="#">Email: <span class="link_icon">jayram06@gmail.com</span> <span
-                    class="link_icon"><i class="fa-solid fa-envelope"></i></span></a></li><br>
-              <li class="list-inline-item"><a href="#">Instagram: <span class="link_icon"><i
-                      class="fa-brands fa-instagram"></i></span></a></li><br>
-            </ul>
-          </div>
-        </div>
+                  <span class="icon_insta"><i class="fa-brands fa-instagram"></i></span>
 
-        <div class="hrline"></div>
+                  <span class="icon_whatsapp"><i class="fa-brands fa-whatsapp"></i></span>
 
-        <div class="col-3">
-          <!-- Contact Us -->
-          <div class="more-info-text">
-            <p>Need Help</p>
+                  <span class="icon_email"><i class="fa-solid fa-envelope"></i></span>
+
+                 <span class="icon_link"> <i class="fa-brands fa-linkedin"></i></span>
+              </div>
           </div>
-          <div class="container">
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Location <span class="link_icon"><i
-                      class="fa-solid fa-location-dot"></i></span></a>
-              </li><br>
-              <li class="list-inline-item"><a href="#">Contact: <span class="link_icon">9800613223</span> <span><i
-                      class="fa-solid fa-phone"></i></span></a></li><br>
-              <li class="list-inline-item"><a href="#">Email: <span class="link_icon">jayram06@gmail.com</span> <span
-                    class="link_icon"><i class="fa-solid fa-envelope"></i></span></a></li><br>
-              <li class="list-inline-item"><a href="#">Instagram: <span class="link_icon"><i
-                      class="fa-brands fa-instagram"></i></span></a></li><br>
-            </ul>
+
+          <div class="col-3">
+              <div class="fs-4 ">More Info</div>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">Search</a></li><br>
+                  <li class="list-inline-item"><a href="#">Privacy Policy</a></li><br>
+                  <li class="list-inline-item"><a href="#">Refund Policy</a></li><br>
+                  <li class="list-inline-item"><a href="#">Shipping & Returns</a></li><br>
+                  <li class="list-inline-item"><a href="#">Terms Of Service</a></li><br>
+                  <li class="list-inline-item"><a href="#">Do not sell or share my personal information</a></li><br>
+              </ul>
           </div>
-        </div>
+
+          <div class="col-3">
+
+              <div class="fs-4 ">About Info</div>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">Privacy Statement</a></li><br>
+                  <li class="list-inline-item"><a href="#">Jobs</a></li><br>
+                  <li class="list-inline-item"><a href="#">Term and Conditions</a></li><br>
+                  <li class="list-inline-item"><a href="#">Shipping & Returns</a></li><br>
+                  <li class="list-inline-item"><a href="#">Cookies Statements</a></li><br>
+                  <li class="list-inline-item"><a href="#">Editorial Policy</a></li><br>
+              </ul>
+          </div>
 
       </div>
 
+
+      
       <!-- Horizontal line -->
       <hr>
 
       <!-- Footer Bottom -->
       <div class="footer-bottom row align-items-center">
-        <div class="col-md-6 footer-bottom-left">
-          <p>Copyright © 2024 <span>Yatri Prints</span> | <span>Powered by Shopify</span> | <span>Powered by
-              Debutify</span></p>
-        </div>
-        <div class="col-md-6 footer-bottom-right">
-          <img title="AMXE PAY" class="img-fluid rounded" src="Myimages/channels4_profile.jpg" alt="Payment Methods">
-          <img title="i-PAY" class="img-fluid rounded" src="Myimages/apple pay.png" alt="Payment Methods">
-          <img title="G-PAY" class="img-fluid rounded" src="Myimages/g-pay.jpg" alt="Payment Methods">
-          <img title="MASTER-PAY" class="img-fluid rounded" src="Myimages/mastercard.jpg" alt="Payment Methods">
-          <img title="SHOP-PAY" class="img-fluid rounded" src="Myimages/shop pay.webp" alt="Payment Methods">
-          <img title="UNION-PAY" class="img-fluid rounded" src="Myimages/union pay.png" alt="Payment Methods">
-          <img title="VISA-PAY" class="img-fluid rounded" src="Myimages/visa.png" alt="Payment Methods">
-        </div>
+          <div class="col-md-6 footer-bottom-left">
+              <p>Copyright © 2024 <span>Yatri Prints</span> | <span>Powered by Shopify</span> | <span>Powered by
+                      Debutify</span></p>
+          </div>
+          <div class="col-md-6 footer-bottom-right">
+              <img title="AMXE PAY" class="img-fluid rounded" src="Myimages/channels4_profile.jpg"
+                  alt="Payment Methods">
+              <img title="i-PAY" class="img-fluid rounded" src="Myimages/apple pay.png" alt="Payment Methods">
+              <img title="G-PAY" class="img-fluid rounded" src="Myimages/g-pay.jpg" alt="Payment Methods">
+              <img title="MASTER-PAY" class="img-fluid rounded" src="Myimages/mastercard.jpg"
+                  alt="Payment Methods">
+              <img title="SHOP-PAY" class="img-fluid rounded" src="Myimages/shop pay.webp" alt="Payment Methods">
+              <img title="UNION-PAY" class="img-fluid rounded" src="Myimages/union pay.png" alt="Payment Methods">
+              <img title="VISA-PAY" class="img-fluid rounded" src="Myimages/visa.png" alt="Payment Methods">
+          </div>
       </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
 

@@ -17,6 +17,392 @@
 }
 
 
+
+
+
+
+/* review */
+
+/* review */
+.Review_css{
+  padding: 5%;
+}
+
+/* rating */
+.star-rating {
+  direction: rtl;
+  font-size: 2rem;
+  display: inline-flex;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Highlight stars on hover */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #f76c6c;
+}
+
+/* Show selected rating */
+.star-rating input:checked ~ label {
+  color: #f76c6c;
+}
+
+
+/* Offcanvas for menu button */
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+/* Hide the checkbox */
+.unique-menu-toggle-checkbox {
+  display: none;
+}
+
+/* Icon to open the menu */
+.unique-menu-icon-label {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+}
+
+/* Offcanvas menu styles */
+.unique-offcanvas {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  background-color: #233b47;
+  color: #fff;
+  transition: 0.3s;
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll; 
+  scrollbar-width: none; 
+  padding-bottom: 80px; 
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.unique-offcanvas::-webkit-scrollbar {
+  display: none;
+}
+
+
+.unique-menu-toggle-checkbox:checked ~ .unique-offcanvas {
+  left: 0;
+}
+
+.unique-offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.unique-close-icon-label {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Menu list */
+.unique-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unique-menu-list li {
+  margin: 15px 0;
+}
+
+.unique-menu-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.unique-menu-list a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.unique-menu-list a:hover::before {
+  width: 100%;
+}
+
+/* Auth buttons */
+.unique-auth-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.unique-login-btn, .unique-signup-btn {
+  background-color: #e05b53;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+hr {
+  border: 0.5px solid #fff;
+  margin: 20px 0;
+}
+
+/* Contact info */
+.unique-contact-info p {
+  margin: 5px 0;
+}
+
+/* Caresol review part */
+.unique_reviews_section {
+  padding: 20px;
+}
+
+.reviews-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.review-card {
+  min-width: 250px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.stars i {
+  color: #f86363;
+  font-size: 1.2rem;
+}
+
+.review-author {
+  color: #6c757d;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.review-image {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.reviews-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.reviews-wrapper::-webkit-scrollbar-thumb {
+  background-color: #4caf50;
+  border-radius: 10px;
+}
+
+.link_icon{
+  color: #cbfff7;
+}
+
+
+
+
+/* Custom styles for the project */
+
+.cardmain{
+  padding: 2% 6% 0% 6%;
+}
+
+.custom-card {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgb(10, 110, 172);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 9.9s ease, background-size 9.9s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card:hover {   
+  background-size: 123%;
+}
+
+.card-content {
+  height: 400px;
+  width: 100%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: background 0.9s ease;
+}
+
+.custom-card:hover .card-content {
+  background: rgba(0, 0, 0, 0.7); /
+}
+
+.card-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.shop-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f76c6c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.shop-btn:hover {
+  border-radius: 40px; 
+  background-color: #e74c3c;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .custom-card {
+      height: 300px;
+  }
+
+  .card-content h3 {
+      font-size: 20px;
+  }
+
+  .card-content p {
+      font-size: 14px;
+  }
+
+  .shop-btn {
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+}
+
+/* Carousel control styles */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #f76c6c; 
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+  background-color: #e74c3c; 
+}
+
+
+/* Reset for the demo */
+* {
+	box-sizing: border-box;
+	min-width: 0;
+	min-height: 0; 
+}
+body {
+	margin: 0;
+	font-size: 1.4rem;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	line-height: 1.5;
+	color: #575757;	
+}
+h1 {
+	text-align: center;
+}
+button {
+	padding: 0;
+	margin: 0;
+	border-style: none;
+	touch-action: manipulation;
+	display: inline-block;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+/* End Reset for the demo */
+
+/* Sass Config */
+$btn_grey: #575757; /* Contrast : 7.2:1 */
+/* End Sass Config */
+
+.qty {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	
+	label {
+		flex: 1 0 100%;		
+	}
+	input {
+		width: 7rem; height: 3rem;	
+		font-size: 1.3rem;
+		text-align: center;
+		border: 1px solid $btn_grey;
+	}
+	button {
+		width: 3rem; height: 3rem;
+		color: #fff;
+		font-size: 2rem;
+		background: $btn_grey;
+	}
+	button.qtyminus {
+		margin-right: 0.3rem;
+	}
+	button.qtyplus {
+		margin-left: 0.3rem;
+	}
+}
+
+
+
+
+
 /* Header Css */
 .navbar-custom {
   background-color: #0d3b44;
@@ -316,110 +702,16 @@ hr {
 }
 
 
-/* Footer Css*/
-.meke_in_row{
-  text-align: center;
-  display: flex;   
-}
-
-.hrline{
-  background-color: white;
-  width: 1px;
-  margin-right: 50px;
-}
-
-
-/* Footer links */
-.unique-footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.unique-footer-links li {
-  margin: 10px 0;
-}
-
-.unique-footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
-  position: relative;
-}
-
-.unique-footer-links a::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transition: width 0.3s ease;
-}
-
-.unique-footer-links a:hover::before {
-  width: 100%;
-}
-
-
-/* Social icons */
-.unique-social-icons {
-  display: flex;
- text-align: center;
- justify-content: center;
- align-items: center;
-  position: fixed;
-  background-color: #233b47;
-  bottom: 0px;
-  height: 60px;
-  width: 280px;
-  z-index: 1100;
-}
-
-.unique-social-icons a {
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-  margin: 0 10px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.unique-social-icons a:hover {
-  transform: scale(1.2);
-  color: #f0a500;
-}
-
-/* Background color matching the image */
 .footer {
   background-color: #1a4146;
-  color: #f4e2ab;
+  color: #918e88;
   padding: 40px 0;
 }
 
-/* Center text and icons in the first part */
-.footer .social-text {
-  font-size: 20px;
-  margin-bottom: 10px;
+.link_icon{
+  color: #cbfff7;
 }
 
-.footer .social-icons {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.footer .social-icons a {
-  color: #cbc4b7;
-  font-size: 20px;
-  margin: 0 10px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.footer .social-icons a:hover {
-  transform: scale(1.2);
-  color: #eee2c9;
-}
 
 /* Horizontal lines */
 .footer hr {
@@ -445,21 +737,34 @@ hr {
   color: #bfcac7;
 }
 
-/* Underline effect on hover */
-.footer a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  display: block;
-  background: #d9dfd8;
-  transition: width 0.3s ease;
-  bottom: -5px;
-  left: 0;
+.Fotter_textcss{
+  font-size: 50px;
+  color: rgb(190, 214, 214);
+  font-weight: bolder;
+  line-height: 35px;
 }
 
-.footer a:hover::after {
-  width: 100%;
+.icon_footer{
+  color: rgb(199, 199, 198);
+  font-size: 30px;
+  padding: 60px 0px 60px 25px;
+}
+
+.row span{
+  padding: 8px;
+  border-radius: 10px;
+}
+.icon_facebook:hover, .icon_tiktok:hover,  .icon_whatsapp:hover, .icon_email:hover, .icon_link:hover, .icon_insta:hover{
+  background-color: rgb(0, 132, 255);
+  border: 2px solid rgb(0, 95, 150);
+}
+
+.list-inline a{
+  color: #b3e1fa;
+}
+
+.list-inline a:hover{
+  color: rgb(89, 95, 99);
 }
 
 /* Footer bottom part (copyright text left, payment icons right) */
@@ -496,29 +801,20 @@ hr {
   transition: transform 0.3s ease;
 }
 
+.cousor_point img:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.cousor_point img{
+  cursor: pointer;
+}
+
 .footer .footer-bottom-right img:hover {
   transform: scale(1.1);
 }
 
-
-/* Body body_CustomCanvasPrint */
-.body_CustomCanvasPrint{
-  height: 100vh;
-  overflow: scroll;
-  padding: 10px;
-}
-
-.make_row{
-  color: rgb(4, 118, 105);
+.navbar-left{
   font-size: 20px;
-}
-
-.row{
-  display: flex;
-}
-
-.Select_Css{
-  width: 80%;
-  border: 2px solid rgb(247, 24, 117);
-  background-color: #f7a4a1;
+  font-weight: bolder;
 }
