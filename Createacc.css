@@ -1,0 +1,30 @@
+.Body_css{
+    width: 36%;
+    margin-left: 32%;
+    line-height: 45px;
+}
+
+.Body_css p{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.Body_css label, input{
+    font-size: 20px;
+    text-align: left;
+}
+
+.Body_css input{
+    background-color: rgb(223, 224, 221);
+    border: none;
+    border-bottom: 2px solid rgb(57, 55, 55);
+    border-radius: 10px;
+}
+
+.Body_css .input_css, button{
+    width: 100%;
+}
+
+.Body_css .button{
+    
+}
