@@ -10,6 +10,7 @@
 .body_CustomCanvasPrint .right{
   height: 128vh;
   overflow: scroll;
+  padding-right: 5%;
 }
 
 ::-webkit-scrollbar {
@@ -185,149 +186,6 @@ hr {
 /* Caresol review part */
 .unique_reviews_section {
   padding: 20px;
-}
-
-.reviews-wrapper {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 15px;
-  padding: 20px 0;
-}
-
-.review-card {
-  min-width: 250px;
-  background: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  scroll-snap-align: start;
-  flex-shrink: 0;
-}
-
-.stars i {
-  color: #f86363;
-  font-size: 1.2rem;
-}
-
-.review-author {
-  color: #6c757d;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.review-image {
-  width: 50px;
-  height: 50px;
-  margin-top: 10px;
-  object-fit: cover;
-}
-
-.reviews-wrapper::-webkit-scrollbar {
-  height: 8px;
-}
-
-.reviews-wrapper::-webkit-scrollbar-thumb {
-  background-color: #4caf50;
-  border-radius: 10px;
-}
-
-.link_icon{
-  color: #cbfff7;
-}
-
-
-
-
-/* Custom styles for the project */
-
-.cardmain{
-  padding: 2% 6% 0% 6%;
-}
-
-.custom-card {
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  border: 1px solid rgb(10, 110, 172);
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 9.9s ease, background-size 9.9s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.custom-card:hover {   
-  background-size: 123%;
-}
-
-.card-content {
-  height: 400px;
-  width: 100%;
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  transition: background 0.9s ease;
-}
-
-.custom-card:hover .card-content {
-  background: rgba(0, 0, 0, 0.7); /
-}
-
-.card-content h3 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.card-content p {
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-
-.shop-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #f76c6c;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 25px;
-  transition: border-radius 0.3s ease, background-color 0.3s ease;
-  font-weight: bold;
-}
-
-.shop-btn:hover {
-  border-radius: 40px; 
-  background-color: #e74c3c;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .custom-card {
-      height: 300px;
-  }
-
-  .card-content h3 {
-      font-size: 20px;
-  }
-
-  .card-content p {
-      font-size: 14px;
-  }
-
-  .shop-btn {
-      padding: 8px 15px;
-      font-size: 14px;
-  }
 }
 
 /* Carousel control styles */
@@ -815,3 +673,49 @@ hr {
   font-size: 20px;
   font-weight: bolder;
 }
+
+
+/* carosel */
+.text_doc{
+  text-decoration: line-through;
+}
+
+hr{
+  border: 1px solid black;
+}
+
+.vrline{
+  width: 1px;
+}
+
+.make_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.needreviewCss{
+  width: 80%;
+  margin-left: 17%;
+}
+
+.needreviewCss input{
+  height: 50px;
+  padding: 0px 20px;
+}
+
+.needreviewCss1 input, textarea{
+  border: none;
+  border-bottom: 2px solid rgb(83, 82, 82);
+  box-shadow: 1px 1px 1px 1px rgb(97, 115, 125);
+  border-radius: 20px;
+}
+
+.needreviewCss1{
+  text-align: center;
+  width: 40%;
+  margin-left: 20%;
+}
+
+
