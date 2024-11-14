@@ -1,0 +1,12 @@
+.Quality-Wall{
+    background-color: #806E9E;
+    height: 40vh;
+    padding-top: 50px;
+}
+.Quality-Wall2{
+    padding-top: 40px;
+    height: 30vh;
+}
+.Panel-Canvas:hover{
+   opacity: 0.7;
+}
