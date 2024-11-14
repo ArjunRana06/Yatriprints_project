@@ -346,7 +346,7 @@ hr {
 }
 
 .Fotter_textcss{
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(190, 214, 214);
     font-weight: bolder;
     line-height: 35px;
@@ -414,6 +414,6 @@ hr {
 }
 
 .navbar-left{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bolder;
 }
