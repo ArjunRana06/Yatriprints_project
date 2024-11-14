@@ -178,10 +178,11 @@
 .body_bg {
     height: 90vh;
     width: 100%;
-    background-image: url(Myimages/backimg.jpg);
+    background-image: url(Myimages/my6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: rgb(225, 255, 248);
+    opacity: 0.8;
+    color: rgb(1, 27, 53);
 }
 
 .main_body{
