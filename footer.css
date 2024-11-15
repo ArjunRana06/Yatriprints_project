@@ -3,14 +3,14 @@ ul {
     padding: 0px;
 }
 .footer-section {
-  background: #151414;
+  background: #0D3B44;
   position: relative;
 }
 .footer-cta {
   border-bottom: 1px solid #373636;
 }
 .single-cta i {
-  color: #BB2D3B;
+  color: red;
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -20,13 +20,13 @@ ul {
   display: inline-block;
 }
 .cta-text h4 {
-  color: #BB2D3B;
+  color: red;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
 }
 .cta-text span {
-  color: #757575;
+  color: #ffffff;
   font-size: 15px;
 }
 .footer-content {
@@ -50,11 +50,11 @@ ul {
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+      color: #fffbfb;
   line-height: 28px;
 }
 .footer-social-icon span {
-  color: #fff;
+  color: #ffffff;
   display: block;
   font-size: 20px;
   font-weight: 700;
@@ -62,7 +62,7 @@ ul {
   margin-bottom: 20px;
 }
 .footer-social-icon a {
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   margin-right: 15px;
 }
@@ -74,16 +74,19 @@ ul {
   border-radius: 50%;
 }
 .facebook-bg{
-  background: #3B5998;
+  background: #3b5fad;
 }
 .twitter-bg{
   background: #55ACEE;
 }
-.google-bg{
-  background: #DD4B39;
+.fa-whatsapp{
+  background: rgb(0, 243, 85);
+}
+.fa-instagram{
+  background-color: rgb(203, 93, 93);
 }
 .footer-widget-heading h3 {
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -96,7 +99,7 @@ ul {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: red;
 }
 .footer-widget ul li {
   display: inline-block;
@@ -105,10 +108,10 @@ ul {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  color: #ff5e14;
+  color: red;
 }
 .footer-widget ul li a {
-  color: #878787;
+  color: #ffffff;
   text-transform: capitalize;
 }
 .subscribe-form {
@@ -125,9 +128,9 @@ ul {
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #ff5e14;
+    background: red;
     padding: 13px 20px;
-    border: 1px solid #ff5e14;
+    border: 1px solid red;
     top: 0;
 }
 .subscribe-form button i {
@@ -152,9 +155,9 @@ ul {
   margin-left: 20px;
 }
 .footer-menu li:hover a{
-  color: #ff5e14;
+  color: red;
 }
 .footer-menu li a {
   font-size: 14px;
-  color: #878787;
+  color: #ffffff;
 }
