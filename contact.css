@@ -1,24 +1,3 @@
-.form_css input,
-textarea {
-    border: none;
-    border-bottom: 2px solid rgb(138, 136, 136);
-    box-shadow: 1px 1px 1px 1px rgb(140, 164, 177);
-}
-
-.ContectCss {
-    width: 50%;
-    background-color: rgba(244, 243, 243, 0.6);
-    padding: 1% 3%;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 2px rgb(94, 94, 94);
-    margin-right: 4%;
-}
-
-body {
-    background-image: url(Myimages/my5.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 
 /* Header Css */
@@ -46,7 +25,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #6d6c6c;
+    color: #6d6c6c; 
 }
 
 .nav-icon {
@@ -57,9 +36,9 @@ body {
     position: relative;
 }
 
-.nav-icon:hover {
+.nav-icon:hover{
     font-size: 1.35rem;
-    color: #6d6c6c;
+    color: #6d6c6c; 
 }
 
 .account-hover:hover .dropdown-menu,
@@ -81,11 +60,11 @@ body {
     left: auto;
 }
 
-.offcanvas {
+.offcanvas{
     background: #006468;
 }
 
-.offcanvas-header {
+.offcanvas-header{
     padding: 1% 10% 1% 10%;
     font-size: 22px;
     font-weight: bold;
@@ -94,29 +73,27 @@ body {
 
 .search-input {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto; 
     border: none;
     border-bottom: 1px solid rgb(164, 163, 161);
     box-shadow: 5px 5px 5px 2px;
     border-radius: 10px;
 }
 
-.search-input:hover {
+.search-input:hover{
     border: 2px solid #21a6ef;
 }
-
 .search-input .input-group-text {
     padding: 18px;
     background-color: white;
     border: none;
-    border-right: 2px solid transparent;
+    border-right: 2px solid transparent; 
 }
 
 .search-input .form-control {
-    border: none;
+    border: none; 
     box-shadow: none;
 }
-
 .search-input .input-group {
     border: 2px solid #ccc;
 }
@@ -144,8 +121,8 @@ body {
 }
 
 
-@media (max-width: 990px) {
-
+ @media (max-width: 990px) {
+    
 
     .navbar-left .nav-link {
         display: none;
@@ -193,18 +170,18 @@ body {
 
 @media only screen and (max-width: 600px) {
     .Head_text {
-        font-size: 14px;
+      font-size: 14px;
     }
-}
-
-
+  }
+  
+  
 /* Offcanvas for menu button */
 /* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 /* Hide the checkbox */
@@ -235,9 +212,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    padding-bottom: 80px;
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+    padding-bottom: 80px; 
 }
 
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
@@ -246,7 +223,7 @@ body {
 }
 
 
-.unique-menu-toggle-checkbox:checked~.unique-offcanvas {
+.unique-menu-toggle-checkbox:checked ~ .unique-offcanvas {
     left: 0;
 }
 
@@ -301,8 +278,7 @@ body {
     flex-direction: column;
 }
 
-.unique-login-btn,
-.unique-signup-btn {
+.unique-login-btn, .unique-signup-btn {
     background-color: #e05b53;
     color: #fff;
     border: none;
@@ -321,58 +297,9 @@ hr {
     margin: 5px 0;
 }
 
-.link_icon {
+.link_icon{
     color: #cbfff7;
-}
-
-.input-upper {
-    position: relative;
-    width: 300px;
-    margin: 50px auto 0 auto;
-
-    input,
-    textarea {
-        position: relative;
-        outline: 0;
-        width: 300px;
-        background: #304150;
-        padding: 15px 10px;
-        border-radius: 5px;
-        transition: all .5s ease;
-        border: 1px solid #010101;
-        font: 18px 'Oxygen';
-    }
-
-    label {
-        position: absolute;
-        left: 10px;
-        top: 0px;
-        font: 20px/52px 'Oxygen';
-        transition: all .3s ease;
-        color: white;
-    }
-
-    input:focus,
-    input:valid,
-    textarea:focus,
-    textarea:valid {
-        background: #647685;
-        color: #FFFF;
-        -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.75);
-        box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.75);
-    }
-
-    input:focus~label,
-    input:valid~label,
-    textarea:focus~label,
-    textarea:valid~label {
-        transform: translate3d(0px, -31px, 0px);
-        font: 17px/39px 'Oxygen';
-        font-weight: 700;
-        color: #050303;
-    }
-}
+  }
 
 
 /* footer css */
