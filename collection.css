@@ -1,74 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-._ganesh, ._horse1, ._horse2, ._nepal, ._age, ._god,._deer, ._nature, ._frames{
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-._ganesh{
-    background-image: url("img/AllMockups_4.webp");
-}
-._horse1{
-    background-image: url("img/AllMockups_3_a7362054-dc88-4dce-a872-f33de9f9dce5.webp");
-}
-._horse2{
-    background-image: url("img/13.webp");
-}
-._nepal{
-    background-image: url("img/3.webp");
-}
-._age{
-    background-image: url(img/Image_2-6-2024_at_10.48_am.jpg);
-}
-._god{
-    background-image: url(img/5.webp);
-}
-._deer{
-    background-image: url("img/All_Mockups_1.webp");
-}
-._nature{
-    background-image: url(img/large_vertical_mockup.webp);
-}
-._frames{
-    background-image: url("img/AllMockups_3.webp");
-}
-.card p{
-    font-size: 1.5rem;
-}
-
-.card .text-center{
-    padding: 0 5px;
-    color: #fff;
-    padding: 45% 0;
-    width: 100%;
-    height: 500px;
-    background-color: #3c203b;
-    background-color: rgba(74, 41, 84, 0.7);
-}
-
-
-.card:hover{
-    transition-duration: .75s;
-    scale: 1.05;
-}
 
 /* Header Css */
 .navbar-custom {
     background-color: #0d3b44;
-    padding: 1rem 0;
     color: #faf8f8;
     width: 100%;
 }
 
 .logo {
-    height: 40px;
+    height: 90px;
     transition: all 0.3s ease;
 }
 
@@ -362,108 +302,276 @@ hr {
   }
 
 
-  .footer {
-    background-color: #1a4146;
-    color: #918e88;
-    padding: 40px 0;
+  
+
+/* Custom styles for the project */
+
+.cardmain{
+    padding: 2% 6% 0% 6%;
 }
 
-
-/* Horizontal lines */
-.footer hr {
-    border-color: #d9dfd8;
-    margin: 20px 0;
+.custom-card {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgb(10, 110, 172);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 9.9s ease, background-size 9.9s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* More Info section without hover */
-.footer .more-info-text {
-    font-size: 20px;
+.custom-card:hover {   
+    background-size: 123%;
+}
+
+.card-content {
+    height: 400px;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: background 0.9s ease;
+}
+
+.custom-card:hover .card-content {
+    background: rgba(0, 0, 0, 0.7); /
+}
+
+.card-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
     margin-bottom: 15px;
 }
 
-/* More Info links with hover effect */
-.footer a {
-    color: #d9dfd8;
-    text-decoration: none;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.footer a:hover {
-    color: #bfcac7;
-}
-
-.Fotter_textcss{
-    font-size: 50px;
-    color: rgb(190, 214, 214);
-    font-weight: bolder;
-    line-height: 35px;
-}
-
-.icon_footer{
-    color: rgb(199, 199, 198);
-    font-size: 30px;
-    padding: 60px 0px 60px 25px;
-}
-
-.row span{
-    padding: 8px;
-    border-radius: 10px;
-}
-.icon_facebook:hover, .icon_tiktok:hover,  .icon_whatsapp:hover, .icon_email:hover, .icon_link:hover, .icon_insta:hover{
-    background-color: rgb(0, 132, 255);
-    border: 2px solid rgb(0, 95, 150);
-}
-
-.list-inline a{
-    color: #b3e1fa;
-}
-
-.list-inline a:hover{
-    color: rgb(89, 95, 99);
-}
-
-/* Footer bottom part (copyright text left, payment icons right) */
-.footer .footer-bottom {
-    margin-top: 15px;
-    margin-bottom: -20px;
-}
-
-.footer .footer-bottom-left {
-    text-align: left;
-}
-
-.footer .footer-bottom-left p {
-    margin: 0;
-}
-
-.footer .footer-bottom-left p span {
+.shop-btn {
     display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+    background-color: #f76c6c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: border-radius 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
 }
 
-.footer .footer-bottom-left p span:hover {
-    transform: scale(1.1);
-    color: #bfcac7;
+.shop-btn:hover {
+    border-radius: 40px; 
+    background-color: #e74c3c;
 }
 
-.footer .footer-bottom-right {
-    text-align: right;
+/* Responsive styles */
+@media (max-width: 768px) {
+    .custom-card {
+        height: 300px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+
+    .shop-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
 }
 
-.footer .footer-bottom-right img {
-    width: 38px;
-    height: 23px;
-    transition: transform 0.3s ease;
+/* Carousel control styles */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #f76c6c; 
+    border-radius: 50%;
 }
 
-.footer .footer-bottom-right img:hover {
-    transform: scale(1.1);
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    background-color: #e74c3c; 
+}
+
+
+
+/* footer css */
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #0D3B44;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: red;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #ffffff;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #fffbfb;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3b5fad;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.fa-whatsapp{
+  background: rgb(0, 243, 85);
+}
+.fa-instagram{
+  background-color: rgb(203, 93, 93);
+}
+.footer-widget-heading h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: red;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: red;
+}
+.footer-widget ul li a {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: red;
+    padding: 13px 20px;
+    border: 1px solid red;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: red;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #ffffff;
 }
 
 .navbar-left{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bolder;
 }
-
-
