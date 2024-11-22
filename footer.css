@@ -10,7 +10,7 @@ ul {
   border-bottom: 1px solid #373636;
 }
 .single-cta i {
-  color: red;
+  color: rgb(45, 33, 33);
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -161,3 +161,4 @@ ul {
   font-size: 14px;
   color: #ffffff;
 }
+

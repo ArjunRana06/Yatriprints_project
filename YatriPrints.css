@@ -178,11 +178,10 @@
 .body_bg {
     height: 90vh;
     width: 100%;
-    background-image: url(Myimages/my6.jpg);
+    background-image: url(Myimages/backimg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
-    color: rgb(4, 28, 10);
+    color: rgb(226, 232, 228);
 }
 
 .main_body{
@@ -609,21 +608,35 @@ ul {
   border-bottom: 1px solid #373636;
 }
 .single-cta i {
-  color: red;
+  color: rgb(255, 255, 255);
   font-size: 30px;
   float: left;
   margin-top: 8px;
 }
+.single-cta i:hover{
+    color: rgb(200, 20, 17);
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+    cursor: pointer;
+  }
 .cta-text {
   padding-left: 15px;
   display: inline-block;
 }
 .cta-text h4 {
-  color: red;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
 }
+.cta-text h4:hover {
+    color: rgb(201, 1, 1);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    cursor: pointer;
+  }
 .cta-text span {
   color: #ffffff;
   font-size: 15px;
@@ -747,14 +760,14 @@ ul {
   color: #878787;
 }
 .copyright-text p a{
-  color: #ff5e14;
+  color: #14c0ff;
 }
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
 .footer-menu li:hover a{
-  color: red;
+  color: rgb(198, 20, 20);
 }
 .footer-menu li a {
   font-size: 14px;
