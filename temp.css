@@ -28,7 +28,7 @@
   position: relative;
 }
 
-input,
+input, textarea,
 button[type="submit"] {
   border-radius: var(--br);
   padding-block: var(--spacing-top) var(--spacing-bottom);
@@ -36,14 +36,14 @@ button[type="submit"] {
   font: inherit;
 }
 
-input {
+input, textarea {
   display: block;
   width: 300px;
   border: 1px solid var(--clr-neutral-200);
   transition: var(--transition);
 }
 
-input:focus {
+input:focus, textarea:focus{
   outline: none;
   border-color: var(--clr-primary);
 }
@@ -59,7 +59,10 @@ label {
 }
 
 input:focus ~ label,
-input:valid ~ label {
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label
+{
   top: calc(var(--spacing-top) * var(--spacing-top-offset));
   left: calc(var(--spacing-left) * var(--spacing-left-offset));
   font-size: 15px;
