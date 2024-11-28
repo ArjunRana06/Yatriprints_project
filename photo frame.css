@@ -56,9 +56,12 @@
 
 /* Header Css */
 .navbar-custom {
-    background-color: #0d3b44;
-    color: #faf8f8;
-    width: 100%;
+  background-color: #0d3b44;
+  color: #faf8f8;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
 }
 
 .logo {
