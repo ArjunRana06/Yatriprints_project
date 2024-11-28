@@ -1,36 +1,270 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+    <title>Login & Password Management</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="temp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        /* General Reset */
+        body,
+        h2,
+        p,
+        input,
+        button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6C63FF, #4ADEDE, #FF6584);
+            background-size: 300% 300%;
+            animation: gradient-bg 8s infinite;
+        }
+
+        @keyframes gradient-bg {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .Login_body {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 85vh;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 400px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-wrapper {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .form-content {
+            display: flex;
+            transition: transform 0.6s ease-in-out;
+            width: 400%;
+        }
+
+        .form {
+            width: 25%;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .form.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 40px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .input-group .input-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px 0;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(120deg, #6C63FF, #FF6584);
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(120deg, #FF6584, #4ADEDE);
+        }
+
+        .switch-text {
+            text-align: center;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .switch-text .toggle-form {
+            color: #6C63FF;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .switch-text .toggle-form:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="Login_body">
+        <div class="main-container">
+            <div class="form-wrapper">
+                <div class="form-content">
+                    <!-- Login Form -->
+                    <form class="form login-form active">
+                        <h2>Welcome Back!</h2>
+                        <p>Login to your account to continue</p>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                            <span class="input-icon">📧</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Password" required>
+                            <span class="input-icon">🔒</span>
+                        </div>
+                        <p class="switch-text">
+                            <span class="toggle-form" data-target="forgot-password-form">Forgot Password?</span>
+                        </p>
+                        <button type="submit" class="btn">Login</button>
+                        <p class="switch-text mt-1">
+                            Don’t have an account? <span class="toggle-form" data-target="signup-form">Sign Up</span>
+                        </p>
+                    </form>
 
-    <form class="form">
-        <header>
-            <h1 class="text-center">Sign In</h1>
-        </header>
-        <div class="form-group">
-            <input type="email" id="email" required>
-            <label for="email">Email address</label>
+                    <!-- Signup Form -->
+                    <form class="form signup-form">
+                        <h2>Create Account</h2>
+                        <p>Sign up to explore new opportunities</p>
+                        <div class="input-group">
+                            <input type="text" placeholder="Username" required>
+                            <span class="input-icon">👤</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                            <span class="input-icon">📧</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Password" required>
+                            <span class="input-icon">🔒</span>
+                        </div>
+                        <button type="submit" class="btn">Sign Up</button>
+                        <p class="switch-text">
+                            Already have an account? <span class="toggle-form" data-target="login-form">Login</span>
+                        </p>
+                    </form>
+
+                    <!-- Forgot Password Form -->
+                    <form class="form forgot-password-form">
+                        <h2>Forgot Password</h2>
+                        <p>Enter your email to reset your password</p>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                            <span class="input-icon">📧</span>
+                        </div>
+                        <button type="submit" class="btn">Send Reset Link</button>
+                        <p class="switch-text mt-1">
+                            Remembered your password? <span class="toggle-form" data-target="login-form">Login</span>
+                        </p>
+                    </form>
+
+                    <!-- Reset Password Form -->
+                    <form class="form reset-password-form">
+                        <h2>Reset Password</h2>
+                        <p>Enter your new password below</p>
+                        <div class="input-group">
+                            <input type="password" placeholder="New Password" required>
+                            <span class="input-icon">🔒</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Confirm Password" required>
+                            <span class="input-icon">🔒</span>
+                        </div>
+                        <button type="submit" class="btn">Reset Password</button>
+                        <p class="switch-text mt-1">
+                            Back to <span class="toggle-form" data-target="login-form">Login</span>
+                        </p>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <input type="password" id="password" required>
-            <label for="password">Password</label>
-        </div>
-        <p><a class="link" href="#">Forgot password?</a></p>
-        <button type="submit">Continue</button>
-        <p class="text-center">Don't have an account?
-            <a class="link" href="#">Sign up</a>
-        </p>
-    </form>
+    </div>
 
+    <script>
+        const toggleButtons = document.querySelectorAll(".toggle-form");
+        const formContent = document.querySelector(".form-content");
+        const forms = document.querySelectorAll(".form");
 
+        toggleButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const targetFormClass = button.getAttribute("data-target");
+                forms.forEach(form => form.classList.remove("active"));
+                document.querySelector(`.${targetFormClass}`).classList.add("active");
+
+                // Adjust the sliding position of the form content
+                if (targetFormClass === "signup-form") {
+                    formContent.style.transform = "translateX(-25%)";
+                } else if (targetFormClass === "forgot-password-form") {
+                    formContent.style.transform = "translateX(-50%)";
+                } else if (targetFormClass === "reset-password-form") {
+                    formContent.style.transform = "translateX(-75%)";
+                } else {
+                    formContent.style.transform = "translateX(0%)";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

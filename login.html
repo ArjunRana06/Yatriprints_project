@@ -1,21 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yatri Prints</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <link rel="stylesheet" href="YatriPrints.css">
-    <link rel="stylesheet" href="temp.css">
+    <link rel="stylesheet" href="myheader.css">
+
+    
+    <style>
+        /* General Reset */
+        body,
+        h2,
+        p,
+        input,
+        button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6C63FF, #4ADEDE, #FF6584);
+            background-size: 300% 300%;
+            animation: gradient-bg 8s infinite;
+        }
+
+        @keyframes gradient-bg {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .Login_body {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 85vh;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 400px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-wrapper {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .form-content {
+            display: flex;
+            transition: transform 0.6s ease-in-out;
+            width: 400%;
+        }
+
+        .form {
+            width: 25%;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .form.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 40px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .input-group .input-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px 0;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(120deg, #6C63FF, #FF6584);
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(120deg, #FF6584, #4ADEDE);
+        }
+
+        .switch-text {
+            text-align: center;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .switch-text .toggle-form {
+            color: #6C63FF;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .switch-text .toggle-form:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-
+    
+    
     <!-- Navbar -->
     <nav class="navbar-custom d-flex align-items-center justify-content-between">
         <div class="container d-flex align-items-center justify-content-between">
@@ -111,36 +258,9 @@
                     <div class="dropdown-menu p-3">
                         <label for="countrySelect" class="form-label">Country</label>
                         <select class="form-select" id="countrySelect">
-                            <option>Australia (AUD $)</option>
-                            <option>USA (USD $)</option>
-                            <option>USA (USD $)</option>
-                            <option>Canada (CAD $)</option>
-                            <option>UK (GBP £)</option>
-                            <option>Germany (EUR €)</option>
-                            <option>France (EUR €)</option>
-                            <option>Italy (EUR €)</option>
-                            <option>Spain (EUR €)</option>
-                            <option>Netherlands (EUR €)</option>
-                            <option>Japan (JPY ¥)</option>
-                            <option>China (CNY ¥)</option>
-                            <option>India (INR ₹)</option>
-                            <option>Brazil (BRL R$)</option>
-                            <option>South Africa (ZAR R)</option>
-                            <option>New Zealand (NZD $)</option>
-                            <option>USA (USD $)</option>
-                            <option>Canada (CAD $)</option>
-                            <option>UK (GBP £)</option>
-                            <option>Germany (EUR €)</option>
-                            <option>France (EUR €)</option>
-                            <option>Italy (EUR €)</option>
-                            <option>Spain (EUR €)</option>
-                            <option>Netherlands (EUR €)</option>
-                            <option>Japan (JPY ¥)</option>
-                            <option>China (CNY ¥)</option>
-                            <option>India (INR ₹)</option>
-                            <option>Brazil (BRL R$)</option>
-                            <option>South Africa (ZAR R)</option>
-                            <option>New Zealand (NZD $)</option>
+                            <option>India (IC Rs.)</option>
+                            <option>English (USD $)</option>
+                            <option>Nepal (NP NRP.)</option>
                         </select>
                         <button class="btn update-btn mt-3 w-100">Update Preferences</button>
                     </div>
@@ -186,171 +306,114 @@
         </div>
     </div>
 
+    <!-- Body -->
+    <div class="Login_body">
+        <div class="main-container">
+            <div class="form-wrapper">
+                <div class="form-content">
+                    <!-- Login Form -->
+                    <form class="form login-form active">
+                        <h2>Welcome Back!</h2>
+                        <p>Login to your account to continue</p>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                            <span class="input-icon">📧</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Password" required>
+                            <span class="input-icon">🔒</span>
+                        </div>
+                        <p class="switch-text">
+                            <span class="toggle-form" data-target="forgot-password-form">Forgot Password?</span>
+                        </p>
+                        <button type="submit" class="btn">Login</button>
+                        <p class="switch-text mt-1">
+                            Don’t have an account? <span class="toggle-form" data-target="signup-form">Sign Up</span>
+                        </p>
+                    </form>
 
+                    <!-- Signup Form -->
+                    <form class="form signup-form">
+                        <h2>Create Account</h2>
+                        <p>Sign up to explore new opportunities</p>
+                        <div class="input-group">
+                            <input type="text" placeholder="Username" required>
+                            <span class="input-icon">👤</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                            <span class="input-icon">📧</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Password" required>
+                            <span class="input-icon">🔒</span>
+                        </div>
+                        <button type="submit" class="btn">Sign Up</button>
+                        <p class="switch-text">
+                            Already have an account? <span class="toggle-form" data-target="login-form">Login</span>
+                        </p>
+                    </form>
 
-    <section class="vh-105 " style="background-color: rgb(78, 144, 101)">
-        <div class=" py-5 h-100 ">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col col-xl-10">
-              <div class="card" style="border-radius: 1rem;">
-                <div class="row g-0">
-                  <div class="col-md-6 col-lg-5 d-none d-md-block">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
-                      alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
-                  </div>
-                  <div class="col-md-6 col-lg-7 d-flex align-items-center">
-                    <div class="card-body p-lg-5 text-black">
-      
-                        <form class="form">
-                            <header>
-                                <h1 class="text-center">Sign In</h1>
-                            </header>
-                            <div class="form-group">
-                                <input class="w-100" type="email" id="email" required>
-                                <label for="email">Email address</label>
-                            </div>
-                            <div class="form-group">
-                                <input class="w-100" type="password" id="password" required>
-                                <label for="password">Password</label>
-                            </div>
-                            <p><a class="link" href="forgetpass.html">Forgot password?</a></p>
-                            <button type="submit" class="btn btn-danger">Sign In</button>
-                            <p class="text-center">Don't have an account?
-                                <a class="link" href="signup.html">Sign up</a>
-                            </p>
-                        </form>
-      
-                    </div>
-                  </div>
+                    <!-- Forgot Password Form -->
+                    <form class="form forgot-password-form">
+                        <h2>Forgot Password</h2>
+                        <p>Enter your email to reset your password</p>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                            <span class="input-icon">📧</span>
+                        </div>
+                        <button type="submit" class="btn">Send Reset Link</button>
+                        <p class="switch-text mt-1">
+                            Remembered your password? <span class="toggle-form" data-target="login-form">Login</span>
+                        </p>
+                    </form>
+
+                    <!-- Reset Password Form -->
+                    <form class="form reset-password-form">
+                        <h2>Reset Password</h2>
+                        <p>Enter your new password below</p>
+                        <div class="input-group">
+                            <input type="password" placeholder="New Password" required>
+                            <span class="input-icon">🔒</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Confirm Password" required>
+                            <span class="input-icon">🔒</span>
+                        </div>
+                        <button type="submit" class="btn">Reset Password</button>
+                        <p class="switch-text mt-1">
+                            Back to <span class="toggle-form" data-target="login-form">Login</span>
+                        </p>
+                    </form>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
+    </div>
 
+    <script>
+        const toggleButtons = document.querySelectorAll(".toggle-form");
+        const formContent = document.querySelector(".form-content");
+        const forms = document.querySelectorAll(".form");
 
-      <!-- footer -->
+        toggleButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const targetFormClass = button.getAttribute("data-target");
+                forms.forEach(form => form.classList.remove("active"));
+                document.querySelector(`.${targetFormClass}`).classList.add("active");
 
-       <!-- footer-section......? -->
-    <footer class="footer-section">
-      <div class="p-5">
-          <div class="footer-cta pt-5 pb-5">
-              <div class="row">
-                  <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="fas fa-map-marker-alt"></i>
-                          <div class="cta-text">
-                              <h4>Find us</h4>
-                              <span>Dhangadhi taranagar </span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="fas fa-phone"></i>
-                          <div class="cta-text">
-                              <h4>Call us</h4>
-                              <span>+977 9726043210</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="far fa-envelope-open"></i>
-                          <div class="cta-text">
-                              <h4>Mail us</h4>
-                              <span>bg@info.com</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- footer-content bordy part  -->
-          <div class="footer-content pb-5">
-              <div class="row">
-                  <div class="col-xl-4 col-lg-4 mb-50">
-                      <div class="footer-widget">
-                          <div class="footer-logo">
-                              <a href="index.html"><img src="Myimages/mylogo-removebg-preview (1).png"
-                                      class="img-fluid" alt="logo"></a>
-                          </div>
-                          <div class="footer-text">
-                              <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
-                                  incididuntut consec tetur adipisicing
-                                  elit,Lorem ipsum dolor sit amet.</p>
-                          </div>
-                          <!-- footer-social fav-icon.. -->
-                          <div class="footer-social-icon">
-                              <span>Follow us</span>
-                              <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                              <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                      <div class="footer-widget">
-                          <div class="footer-widget-heading">
-                              <h3>Useful Links</h3>
-                          </div>
-                          <ul>
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">about</a></li>
-                              <li><a href="#">services</a></li>
-                              <li><a href="#">portfolio</a></li>
-                              <li><a href="#">Contact</a></li>
-                              <li><a href="#">About us</a></li>
-                              <li><a href="#">Our Services</a></li>
-                              <li><a href="#">Expert Team</a></li>
-                              <li><a href="#">Contact us</a></li>
-                              <li><a href="#">Latest News</a></li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                      <div class="footer-widget">
-                          <div class="footer-widget-heading">
-                              <h3>Subscribe</h3>
-                          </div>
-                          <div class="footer-text mb-25">
-                              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                          </div>
-                          <div class="subscribe-form">
-                              <form action="#">
-                                  <input type="email" placeholder="Email Address">
-                                  <button><i class="fab fa-telegram-plane"></i></button>
-                              </form>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="copyright-area">
-          <div class="container">
-              <div class="row">
-                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                      <div class="copyright-text">
-                          <p>Copyright &copy; 2018, All Right Reserved <a href="">BG-info-tech</a></p>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                      <div class="footer-menu">
-                          <ul>
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">Terms</a></li>
-                              <li><a href="#">Privacy</a></li>
-                              <li><a href="#">Policy</a></li>
-                              <li><a href="#">Contact</a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
+                // Adjust the sliding position of the form content
+                if (targetFormClass === "signup-form") {
+                    formContent.style.transform = "translateX(-25%)";
+                } else if (targetFormClass === "forgot-password-form") {
+                    formContent.style.transform = "translateX(-50%)";
+                } else if (targetFormClass === "reset-password-form") {
+                    formContent.style.transform = "translateX(-75%)";
+                } else {
+                    formContent.style.transform = "translateX(0%)";
+                }
+            });
+        });
+    </script>
 
 
 </body>
